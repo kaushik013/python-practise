@@ -147,26 +147,28 @@
 
 # ⁡⁢⁣⁣number is prime or not ⁡
 
-# n = int(input('enter the number : '))
-# count = 0
-# for i in range(1,n+1):
-#     if(n%i == 0):
-#         count += 1
+n = int(input('enter the number : '))
+count = 0
+for i in range(1,n+1):
+    if(n%i == 0):
+        count += 1
 
-# if(count == 2):
-#     print('prime number!')
-# else:
-#     print('not prime number!')
+if(count == 2):
+    print('prime number!')
+else:
+    print('not prime number!')
+
 
 # n number of prime numbers
 
-n = int(input('enter the number : '))
+# a = int(input('enter the number: '))
+# prime = []
+# for i in range(1, a+1):
+#     count = 0
+#     for j in range(1,i+1):
+#         if(i%j == 0):
+#             count += 1
+#     if(count == 2):
+#         prime.append(i)
+# print(prime)
 
-
-if(n > 1 ):
-    for i in range(2,n+1):
-        for j in range(2,i):
-            if(i%j==0):
-                break
-        else:
-            print(i)
