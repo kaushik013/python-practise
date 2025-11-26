@@ -190,36 +190,36 @@
 
 
 
-# class ATM:
-#     def __init__(self,pin,balance):
-#         self.pin = pin
-#         self.balance = balance
+class ATM:
+    def __init__(self,pin,balance):
+        self.pin = pin
+        self.balance = balance
 
-#     def verify(self,user_pin):
-#         return user_pin == self.pin
+    def verify(self,user_pin):
+        return user_pin == self.pin
 
-#     def withdraw(self,amount,user_pin):
-#         if(self.verify(user_pin)):
-#             if(amount <= self.balance):
-#                 self.balance -= amount
-#                 print(f'{amount} is successfully withdraw!')
-#                 print(f'{self.balance} your balance!')
-#             else:
-#                 print('you have no money! ')
-#         else:
-#             print('incorrect pin ❌')
+    def withdraw(self,amount,user_pin):
+        if(self.verify(user_pin)):
+            if(amount <= self.balance):
+                self.balance -= amount
+                print(f'{amount} is successfully withdraw!')
+                print(f'{self.balance} your balance!')
+            else:
+                print('you have no money! ')
+        else:
+            print('incorrect pin ❌')
         
-#     def show_balance(self,user_pin):
-#         if(self.verify(user_pin)):
-#             print(f'{self.balance} your balance!')
-#         else:
-#             print('wrong pin ❌')
+    def show_balance(self,user_pin):
+        if(self.verify(user_pin)):
+            print(f'{self.balance} your balance!')
+        else:
+            print('wrong pin ❌')
 
 
 
-# user = ATM(1313,100000)
-# user.withdraw(10000,1313)
-# user.show_balance(1313)
+user = ATM(1313,100000)
+user.withdraw(10000,1313)
+user.show_balance(1313)
 
 
 

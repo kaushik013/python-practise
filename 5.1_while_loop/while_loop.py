@@ -64,3 +64,9 @@ while a < len(b):
 
 
 
+
+i = 1
+while i <= 10:
+    print('python')
+    i += 1
+    

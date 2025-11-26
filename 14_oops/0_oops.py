@@ -6,6 +6,72 @@
 
 # ⁡⁢⁣⁣an object is a...⁡
 
+
+# ⁡⁢⁣⁢class⁡
+# ⁡⁢⁣⁣class is a collection of variable (data) and method (function) inside one structure⁡
+# ⁡⁣⁢⁣(class is a design used to make a object)⁡ ---> ⁡⁣⁣⁢like blueprint, template⁡
+
+# ⁡⁣⁣⁢example⁡
+# ⁡⁣⁢⁣class Student:
+#     def __init__(self):
+#     def show(self):⁡
+
+
+# ⁡⁢⁣⁢Attribute / Property⁡
+# ⁡⁢⁣⁣these are variable inside the class it is used to store the data⁡
+
+# ⁡⁣⁣⁢example⁡
+# ⁡⁣⁢⁣self.name
+# self.age
+# self.balance⁡
+
+
+# ⁡⁢⁣⁡⁢⁣⁢constructor⁡
+# ⁡⁢⁣⁣constructor is a special method inside a class that runs automaticaly when you create an object 
+# ⁡⁣⁢⁣def __init__(self)⁡
+
+# ⁡⁢⁣⁢self⁡
+# ⁡⁢⁣⁣whenever you call the method using an object python send that object as the first argument, called self⁡
+# ⁡⁣⁢⁣def __init__(self)⁡
+
+
+
+# ⁡⁢⁣⁢object⁡
+# ⁡⁢⁣⁣object is a intance of  class that contain data and method⁡
+# ⁡⁣⁢⁣s1 = Student("Mac", 22)⁡
+
+
+# ⁡⁢⁣⁢metod ⁡
+# ⁡⁢⁣⁣method is a function insode the class ⁡
+# ⁡⁢⁣⁣it always has a self as its first perameter 
+# ⁡⁢⁣⁢used ⁡
+# ⁡⁣⁢⁣To perform actions
+# ✔️ To use or change object data
+# ✔️ To separate logic inside a class
+
+# ⁡⁣⁣⁢types of method⁡
+
+# ⁡⁢⁣⁢1.⁡ ⁡⁣⁢⁡⁢⁣⁢Instance Method
+# ⁡⁣⁣⁢work on object data used --->  self⁡
+# ⁡⁣⁢⁣def show(self):⁡
+
+
+
+# ⁡⁢⁣⁢2. class method⁡
+# ⁡⁣⁣⁢work on class level used ---> cls⁡
+# ⁡⁣⁢⁣@classmethod  ---> used this 
+# def demo(cls): ---> example⁡
+
+
+# ⁡⁢⁣⁢3. static method⁡
+# ⁡⁣⁣⁢Independent method (⁡⁢⁣⁢no self, no cls⁡).⁡
+# ⁡⁣⁢⁣@staticmethod
+# def info():⁡
+
+
+
+
+
 # ⁡⁣⁢⁣You create classes (templates)
 # And from those classes, you create objects (real things)
 # Objects have properties (data) and functionalities (methods)

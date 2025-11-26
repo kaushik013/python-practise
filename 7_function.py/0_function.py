@@ -2,7 +2,7 @@
 
 # ⁡⁣⁣⁢what if function⁡ ?
 
-# ---> function is a block of code that perform specific task
+# ---> ⁡⁣⁢⁣function is a block of code that perform specific task⁡
  
 # It helps in code ⁡⁢⁣⁣reusability, organization,⁡ and ⁡⁢⁣⁣clean⁡ structure.
 

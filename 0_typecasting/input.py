@@ -22,3 +22,7 @@ print(type(k))
 
 
 
+a , b = input('enter input : ').split()
+
+print(a)
+print(b)

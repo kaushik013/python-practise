@@ -147,3 +147,13 @@
 # else:
 #     print('not armstrong number!')
 
+
+
+#⁡⁢⁣⁣ reverse string⁡
+# n = input('enter the name : ')
+# new = ''
+
+# for i in range(len(n)-1,-1,-1):
+#     new += n[i]
+
+# print(new)

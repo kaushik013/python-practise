@@ -82,7 +82,7 @@ if(number >= 310):
 #     print('not vowel number')
 
 
-n = eval(input('enter type : '))
+# n = eval(input('enter type : '))
 
 # if(n ==int or n == type(bool) or n == type(complex) or n == type(float)):
 #     print('single value data type!')
@@ -98,5 +98,17 @@ n = eval(input('enter type : '))
 
 
 
+# a = int(input('enter the number : '))
+
+# if(a > 50):
+#     if(a % 10 == 0):
+#         print('yes divisable by 10')
+#     else:
+#         print('no not divisable by 10')
+# else:
+#     print('not grater than 50')
 
 
+
+a = int('11',2)
+print(a)

@@ -110,24 +110,94 @@
 
 # ⁡⁢⁣⁣give number smallest ⁡
 
-a = int(input('enter the first number : '))
-b = int(input('enter the second number : '))
-c = int(input('enter the third number : '))
+# a = int(input('enter the first number : '))
+# b = int(input('enter the second number : '))
+# c = int(input('enter the third number : '))
 
 
 
-if(a == b == c):
-    print('all number are similar!')
-elif(a == b):
-    print('a and b is similar!')
-elif(a == c):
-    print('a and c is similar!')
-elif(b == c):
-    print('b and c is similar!')
-else:
-    if(a < b and a < c):
-        print(f'{a} is smallest!')
-    elif(b < a and b < c):
-        print(f'{b} is smallest!')
+# if(a == b == c):
+#     print('all number are similar!')
+# elif(a == b):
+#     print('a and b is similar!')
+# elif(a == c):
+#     print('a and c is similar!')
+# elif(b == c):
+#     print('b and c is similar!')
+# else:
+#     if(a < b and a < c):
+#         print(f'{a} is smallest!')
+#     elif(b < a and b < c):
+#         print(f'{b} is smallest!')
+#     else:
+#         print(f'{c} is smallest!')
+
+
+# a = input('enter the character! : ')
+
+
+# if(len(a) == 1):
+#     if(a >= 'A' and a<= 'Z' or a >= 'a' and a <= 'z'):
+#         if(a in 'AEIOUaeiou'):
+#             print('vowel character!')
+#         else:
+#             print('not vowel character!')
+#     else:
+#         print('not a alpha character!')
+# else:
+#     print('lenth is more than 1 char!')
+
+
+user = 'Kaushik_13'
+password = 'Kaushik@13'
+
+id = input('enter the user : ')
+
+if(id == user):
+    pash = input('enter password : ')
+    if(pash == password):
+        print('login sucessfully! ✅ ')
     else:
-        print(f'{c} is smallest!')
+        print('password is not valid! ❌')
+else:
+    print('id is not valid! ❌')
+
+
+
+
+# a = int(input('enter the first number : '))
+# b = int(input('enter the second number : '))
+# c = int(input('enter the third number : '))
+
+
+# if(a > b):
+#     if(a > c):
+#         print(f'{a} is gratest!')
+#     else:
+#         print(f'{c} is gratest!')
+# else:
+#     if(b > c):
+#         print(f'{b} is gratest!')
+#     else:
+#         print(f'{c} is gratest')
+
+
+# a = int(input('enter the first number : '))
+# b = int(input('enter the second number : '))
+# c = int(input('enter the third number : '))
+# d = int(input('enter the third number : '))
+
+# if(a > b):
+#     if(a > c):
+#         if(a > d):
+#             print(f'{a} is gratest!')
+#         else:
+#             print(f'{d} is gratest!')
+#     else:
+#         if(c > d):
+#             print(f'{c} is gratest!')
+#         else:
+#             print(f'{d} is gratest!')
+# else:
+#     if(b > )
+    
