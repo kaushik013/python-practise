@@ -19,7 +19,7 @@
 # 15. Check if a train ticket is Economy, Business, or First Class.⁡
 
 
-# ⁡⁢⁣⁡⁣⁣⁢1. Check if a number is positive, negative, or zero
+# 1. Check if a number is positive, negative, or zero
 
 # a = int(input('enter the number : '))
 
@@ -226,7 +226,7 @@
 
 
 
-# 15. Check if a train ticket is Economy, Business, or First Class.⁡
+# 15. Check if a train ticket is Economy, Business, or First Class.
 
 # a = input('enter the tickit : ')
 

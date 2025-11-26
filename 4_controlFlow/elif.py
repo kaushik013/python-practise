@@ -148,19 +148,19 @@
 #     print('lenth is more than 1 char!')
 
 
-user = 'Kaushik_13'
-password = 'Kaushik@13'
+# user = 'Kaushik_13'
+# password = 'Kaushik@13'
 
-id = input('enter the user : ')
+# id = input('enter the user : ')
 
-if(id == user):
-    pash = input('enter password : ')
-    if(pash == password):
-        print('login sucessfully! ✅ ')
-    else:
-        print('password is not valid! ❌')
-else:
-    print('id is not valid! ❌')
+# if(id == user):
+#     pash = input('enter password : ')
+#     if(pash == password):
+#         print('login sucessfully! ✅ ')
+#     else:
+#         print('password is not valid! ❌')
+# else:
+#     print('id is not valid! ❌')
 
 
 

@@ -53,7 +53,7 @@ class Univercity:
 class College(Univercity):
     def __init__(self, name, collge,city):
         super().__init__(name, collge)
-        self.city = city
+        self.city = city 
 
     def college_show(self):
         print(self.name)

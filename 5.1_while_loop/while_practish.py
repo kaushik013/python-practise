@@ -85,3 +85,17 @@
 #         vowel += a[i]
 #     i += 1
 # print(vowel)
+
+
+def define(n):
+    digits = []
+
+    while n > 0:
+        digit = n % 10
+        digits.append(digit)
+        n = n // 10
+    
+    for i in reversed(digits):
+        print(i)
+
+define(22)
