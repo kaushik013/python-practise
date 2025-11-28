@@ -15,10 +15,10 @@
 #     for j in range(1,3):
 #         print(i)
 
-list = [1,2,3,4,5,6]
+# list = [1,2,3,4,5,6]
 
-for j in range(len(list)):
-    print(list[j])
+# for j in range(len(list)):
+#     print(list[j])
 
 
 # tbl = int(input('Enter number : '))
@@ -27,16 +27,16 @@ for j in range(len(list)):
 #     print(f"{tbl} X {i} = {tbl * i}")
 
 
-for i in range(1,20,1):
-    if(i % 2 == 0):
-        print(i,'even number')
-    else:
-        print(i,'odd number')
+# for i in range(1,20,1):
+#     if(i % 2 == 0):
+#         print(i,'even number')
+#     else:
+#         print(i,'odd number')
 
 
 
-for i in range(1,11,1):
-    print('*' * i)
+# for i in range(1,11,1):
+#     print('*' * i)
 
 # *
 # **
@@ -50,8 +50,8 @@ for i in range(1,11,1):
 # **********
 
 
-for j in range(10,0,-1):
-    print('*' * j)
+# for j in range(10,0,-1):
+#     print('*' * j)
 
 # **********
 # *********
@@ -78,50 +78,60 @@ for j in range(10,0,-1):
 # step --> (⁡⁢⁢⁣opctional⁡) the difference between number default ⁡⁣⁣⁢1⁡
 
 
-for h in range(1,101,1):
-    print(h)
+# for h in range(1,101,1):
+#     print(h)
 
-# print 1 to 100 number 
+# # print 1 to 100 number 
 
-for a in range(4):
-    print(a)
+# for a in range(4):
+#     print(a)
 
-for b in range(2,7):
-    print(b)
+# for b in range(2,7):
+#     print(b)
 
-for g in range(1,10,3):
-    print(g, end= " ")
-
-
-for k in range(1,20):
-    if(k > 10):
-        break
-    print(k)
-
-for l in range(1,10):
-    if(l == 5):
-        continue
-    print(l)
+# for g in range(1,10,3):
+#     print(g, end= " ")
 
 
-for r in range(1,15):
-    if(r % 2 == 0):
-        print(r)
+# for k in range(1,20):
+#     if(k > 10):
+#         break
+#     print(k)
+
+# for l in range(1,10):
+#     if(l == 5):
+#         continue
+#     print(l)
 
 
-text = 'Python'
-reverse = ''
-
-for char in text:
-    reverse = char + reverse
-print(reverse)
+# for r in range(1,15):
+#     if(r % 2 == 0):
+#         print(r)
 
 
+# text = 'Python'
+# reverse = ''
 
-txt = 'java'
-rever = '' 
+# for char in text:
+#     reverse = char + reverse
+# print(reverse)
+
+
+
+# txt = 'java'
+# rever = '' 
  
-for t in range(len(txt)-1,-1,-1):
-    rever = rever + txt[t]
-print(rever)
+# for t in range(len(txt)-1,-1,-1):
+#     rever = rever + txt[t]
+# print(rever)
 
+
+
+# li = ['a','b','c','d']
+
+# st = li.copy()
+
+# for i in range(1,len(li)*2-1,2):
+#     st.insert(i,'*')
+#     final = ''.join(st)
+# print(final)

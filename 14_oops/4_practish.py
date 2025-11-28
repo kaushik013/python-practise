@@ -1,11 +1,15 @@
 
 class Bank:
 
+    branch = 'Veraval'
+    Address = 'Ahmedabad'
+
     def __init__(self,name,age):
         self.name = name
         self.age = age
 
     def details(self):
+        print(self.branch)
         print(self.name)
         print(self.age)
 
@@ -17,4 +21,5 @@ class Bank:
 us = Bank('kaushik',33)
 us.details()
 us.greet()
+
 

@@ -41,19 +41,19 @@
 # Create class C(A, B) and call the show() method.⁡
 
 
-class A:
-    def show(self):
-        print('hello i am A')
+# class A:
+#     def show(self):
+#         print('hello i am A')
 
-class B:
-    def show(self):
-        print('hello i am B')
+# class B:
+#     def show(self):
+#         print('hello i am B')
 
-class C(A,B):
-    pass
+# class C(A,B):
+#     pass
 
-obj = C()
-obj.show()
+# obj = C()
+# obj.show()
 
 
 
@@ -104,8 +104,8 @@ obj.show()
 # obj.details()
 
 
-# ⁡⁢⁣⁣Create two classes:⁡
-# ⁡⁣⁢⁣Class X
+# Create two classes:
+# Class X
 # Method: m1() → prints "I am X"
 # Class Y
 # Method: m1() → prints "I am Y"
@@ -115,7 +115,7 @@ obj.show()
 # Create an object of class Z.
 # Call m1() using that object.
 # Observe: Which class method is executed?
-# Print MRO of class Z.⁡
+# Print MRO of class Z.
 
 
 # class X:
@@ -135,14 +135,66 @@ obj.show()
 # print(Z.__mro__)
 
 
-li = ['a','b','c','d']
-
-st = li.copy()
-
-for i in range(1,len(li)*2-1,2):
-    st.insert(i,'*')
-    final = ''.join(st)
-print(final)
 
 
+# Class 1: Person
+# __init__ → name, age
+# Method → show_person() → print personal info
+# Method → common() → print "Person version"
+# Class 2: Company
+# __init__ → company_name, location
+# Method → show_company() → print company info
+# Method → common() → print "Company version"
+# Class 3: Employee(Person, Company)
+# __init__ → name, age, company_name, location, salary, role
+# Use super()
+# Method → show_employee() → print employee info
+# Print all variables from Person, Company, Employee
+# Call common() → find out which one runs (MRO)
+
+
+class Person:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def show_person(self):
+        print(self.name)
+        print(self.age)
+    
+    def common(self):
+        print('Person Version')
+
+class Company:
+
+    def __init__(self, company_name, locaction):
+        self.company_name = company_name
+        self.locaction = locaction
+    
+    def show_company(self):
+        print(self.company_name)
+        print(self.locaction)
+
+    def common(self):
+        print('Company Version')
+
+class Employee(Person, Company):
+
+    def __init__(self, name, age, company_name, locaction, salary, role):
+        super().__init__(name, age)
+        Company.__init__(self,company_name, locaction)
+        self.salary = salary
+        self.role = role
+
+    def show_employee(self):
+        self.show_person()
+        self.show_company()
+        print(self.salary)
+        print(self.role)
+        self.common()
+    
+
+emo1 = Employee('janvi',21,'Microsoft','Pune',100000,'AI-ML')
+emo1.show_employee()
 

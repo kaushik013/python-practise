@@ -1,21 +1,26 @@
 
+
+# class
 class Student:
+
+    # constructor 
     def __init__(self,name,age,city,college):
         self.Name = name
         self.Age = age
         self.City = city
         self.College = college
 
+    # instanse methos
     def colleges(self):
         print('student of ',self.College)
     
-
+    # instanse methos
     def details(self):
         self.colleges()
         print(f'my name is {self.Name} my age is {self.Age} i am from {self.City} and my college is {self.College} \n')
 
 
-
+# object
 Student1 = Student('kaushik','22','ahmedabad','IIM')
 Student2 = Student('Raj','21','veraval','Parul UNI')
 Student3 = Student('Janvi','20','vadodra','Girls college')

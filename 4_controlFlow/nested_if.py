@@ -299,29 +299,42 @@ pas = int(input('enter your bank PIN for check balance : '))
 
 if(pas == ATM_PIN):
     print(balance)
+
     amount = int(input('enter your amount for widrow! : '))
+
     if(balance >= amount):
-        print('withdrawal is possible! ✅')
+        print('withdraw is possible! ✅')
+
         yes = input('you want to widrow ? yes / no : ')
         if(yes == 'yes'):
             widrow = int(input('enter ATM pin : '))
+
             if(widrow == ATM_PIN):
-                print(f'sucesfully withdrawal amount {amount}Rs.')
+                balance -= amount
+                print(f'sucesfully withdraw amount {amount}Rs.')
                 check = input('press "yes" for check bank balance! : ')
+
                 if(check == 'yes'):
-                    pas = int(input('enter your bank password for check balance : '))
-                    if(pas == ATM_PIN):
-                        print(f'{balance - amount}Rs your balance!')
+                    PIN = int(input('enter your bank password for check balance : '))
+
+                    if(PIN == ATM_PIN):
+                        print(f'{balance}Rs your balance!')
                         print('thanl you 😊')
+
                     else:
                         print('pin incorrect! ❌')
+
                 else:
                     print('thank you 😊')
+
             else:
                 print('incorrect PIN! ❌')
+
         else:
             print('thank you 😊')
+
     else:
         print('not possible your balanse is down ❌')
+        
 else:
     print('incorrect password! ')

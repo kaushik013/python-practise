@@ -20,6 +20,17 @@
 # ⁡⁢⁣⁢Attribute / Property⁡
 # ⁡⁢⁣⁣these are variable inside the class it is used to store the data⁡
 
+# ⁡⁣⁣⁢two types of attribute⁡
+
+# ⁡⁢⁣⁣1. class attribute
+# ---> a normal variable create inside class it is a class attribute
+# ⁡⁢⁣⁢ex⁡ 
+# ⁡⁣⁢⁣class Student:⁡
+    # college = 'Apna college'⁡
+
+
+# ⁡⁢⁣⁣2.instance attribute⁡
+# ⁡⁣⁣⁢attribute create using instance like self.name, self.age etc..⁡.
 # ⁡⁣⁣⁢example⁡
 # ⁡⁣⁢⁣self.name
 # self.age
