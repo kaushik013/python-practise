@@ -161,7 +161,7 @@
 #     elif(ord(a[i]) >= 48 and ord(a[i]) <= 57):
 #         digit += 1
 #     else:
-#         specil += 1
+#         specil += 1 
 #     i += 1
 
 
@@ -169,3 +169,36 @@
 # print(f'total lower : {lower}')
 # print(f'total digit : {digit}')
 # print(f'total special : {specil}')
+
+
+
+# reverse the number
+# a = int(input('enter the number : '))
+
+# total = 0
+# while a > 0:
+#     c = a % 10
+#     total = total * 10 + c
+#     a //= 10
+# print(total)
+
+
+
+# pallind rom or not 
+# a = int(input('enter the number : '))
+
+# temp = a
+
+# total = 0
+# while temp > 0:
+#     c = temp % 10
+#     total = total * 10 + c
+#     temp //= 10
+# print(total)
+
+# if(a == total):
+#     print('pallindrom')
+# else:
+#     print('not pallindrom')
+
+
