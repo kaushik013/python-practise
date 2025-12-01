@@ -202,3 +202,96 @@
 #     print('not pallindrom')
 
 
+
+
+# 1.Write a program to find the sum of digits of a number
+
+# 2.Write a program to print the sum of odd numbers  and even numbers separately between the limits given 
+# by user
+
+# 3. Write a program to print the following sequence for n terms
+# 1 4 9 16 25 ...... n terms
+
+# 4. Write a program to print the sum of n terms of the following series 
+# 1 + 8 + 27+ .... n terms
+
+# 5.Write a program to print the factors of a given number
+
+
+
+
+# 1.Write a program to find the sum of digits of a number
+
+# a = int(input('Enter the number : '))
+
+# sum = 0
+# while a > 0:
+#     c = a % 10 
+#     sum += c
+#     a //= 10
+# print(sum)
+
+
+
+
+# 2.Write a program to print the sum of odd numbers  and even numbers separately between the limits given 
+# by user
+
+# a = int(input('enter the number : '))
+
+# even = 0
+# odd = 0
+
+# i = 1
+# while i <= a:
+#     if(i % 2 == 0):
+#         even += i
+#     else:
+#         odd += i
+#     i += 1
+# print(f'sum of even number : {even} ')
+# print(f'sum of odd number : {odd} ')
+
+
+
+
+# 3. Write a program to print the following sequence for n terms
+# 1 4 9 16 25 ...... n terms
+
+# a = int(input('enter the number : '))
+ 
+# i = 0
+# while i <= a:
+#     print(i * i)
+#     i += 1
+
+
+
+
+# 4. Write a program to print the sum of n terms of the following series 
+# 1 + 8 + 27+ .... n terms
+
+
+# a = int(input('enter the number : '))
+
+# i = 1
+# sum = 1
+# while i <= a:
+#     c = i * i * i
+#     print(c)
+#     sum += c 
+#     i += 1
+# print(f'total sum is : {sum}')
+
+
+
+
+# 5.Write a program to print the factors of a given number
+ 
+# a = 5
+# fact = 1
+# i = 1
+# while a >= i:
+#     fact = fact * a
+#     a -= 1
+# print(fact)
