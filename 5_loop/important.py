@@ -53,3 +53,27 @@
 #             continue
 #         else:
 #             print(i)
+
+
+
+# reverse the string 
+
+# a = input('enter the text : ')
+
+# reverse = ''
+
+# for i in range(len(a)-1,-1,-1):
+#     reverse += a[i]
+# print(reverse)
+
+
+
+# extract wovel
+# a = input('enter the text : ')
+
+# extWovl = ''
+
+# for i in a:
+#     if(i in 'AEIOUaeiou'):
+#         extWovl += i
+# print(extWovl)
