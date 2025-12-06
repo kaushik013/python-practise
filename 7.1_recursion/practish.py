@@ -51,7 +51,7 @@
 
 # Write a recursive function to reverse a number.
 
-a = 1234
+# a = 1234
 
 # sum = 0
 

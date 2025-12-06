@@ -334,3 +334,320 @@
 # print(char)
 # print(digit)
 # print(specil)
+
+
+# ⁡⁢⁣⁢important 
+# var = [key] = Value
+
+# a = ['Pythin','hii','holiday','byee']
+
+# output = {'Pythin': 6, 'hii': 3, 'holiday': 7, 'byee': 4}
+
+# dict_my = {}
+
+# for i in a:
+#     dict_my[i] = len(i)
+# print(dict_my)
+
+
+
+
+# if string is even reverse the string else count the len 
+
+# a = ['Pythin','hii','holiday','byee']
+
+# # {'Pythin': 'nihtyP', 'hii': 3, 'holiday': 7, 'byee': 'eeyb'}
+
+# dict_my = {}
+
+# for i in a:
+#     if(len(i) % 2 == 0):
+#         dict_my[i] = i[::-1]
+#     else:
+#         dict_my[i] = len(i)
+
+# print(dict_my)
+
+
+
+
+#output  {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100}
+
+# dic = {}
+
+# for i in range(1,11):
+#     dic[i] = i * i
+
+# print(dic)
+
+
+
+
+# output = {2: 4, 3: 27, 4: 16, 5: 125, 6: 36, 7: 343, 8: 64, 9: 729, 10: 100}
+
+# dic = {}
+
+# for i in range(2,10+1):
+#     if(i%2 == 0):
+#         dic[i] = i * i
+#     else:
+#         dic[i] = i ** 3
+
+# print(dic)
+
+
+
+#output = {'python': 6, 'is': 2, 'easy': 4}
+
+
+# a = 'python is easy'
+
+# final = a.split()
+
+# dic = {}
+
+# for i in final:
+#     dic[i] = len(i)
+
+# print(dic)
+
+# {'python': 6, 'is': 2, 'easy': 4}
+
+
+
+
+
+# 1.Input : (12,3.4,'hello',2+3j,'python','bye',False)
+#  Output : {'hello': 5, 'python': 6,'bye':3} 
+
+
+# a =  (12,3.4,'hello',2+3j,'python','bye',False)
+
+
+# dic = {}
+
+# for i in a:
+#     if(type(i) == str):
+#         dic[i] = len(i)
+# print(dic)
+
+
+
+
+# a =  [12,3.4,'hello',2+3j,'python','bye',False]
+# #   Output : {'hello': 'ho', 'python': 'pn','bye':'be'} 
+
+# dic = {}
+
+# for i in a:
+#     if(type(i) == str):
+#         dic[i] = i[0]+i[-1]
+
+# print(dic)
+
+
+
+# 3. Input : 'my name is yash patel'
+#    Output :{'my':2 , 'name': 4, 'yash':4 ,'patel':5}
+
+# a = 'my name is yash patel'
+# dic = {}
+
+# lis = a.split()
+
+# for i in lis:
+#     dic[i] = len(i)
+
+# print(dic)
+
+
+
+# 4. Write a program to replace string with underscore in string
+
+# a = input('enter the str : ')
+
+# new = ''
+# for i in a:
+#     if(i == ''):
+#         i = '_'
+#         new += i 
+#     new += i
+
+# print(new)
+
+
+
+
+# output =  {'a': 2, 'b': 1, 'c': 2, 'd': 1, 'e': 2}
+# a = 'aabcdece'
+
+# dic = {}
+
+# for i in a:
+#     if(i not in dic):
+#         dic[i] = 1
+#     else:
+#         dic[i] = dic[i] + 1
+    
+# print(dic)
+
+
+
+
+# a = {'python' : 2, 'is' : 2, 'easy' :  1, 'dynamically' : 1, 'typed' : 1}
+
+# a = 'python is easy python is dynamically typed'
+
+# final = a.split()
+
+# dic = {}
+
+# for i in final:
+#     if(i not in dic):
+#         dic[i] = 1
+#     else:
+#         dic[i] = dic[i] + 1
+
+# print(dic)
+
+
+
+
+# a = 'aaabbcccdd'
+
+# dic = {}
+
+# for i in a:
+#     if i in dic:
+#         dic[i] += 1
+#     else:
+#         dic[i] = 1
+
+# print(dic)
+
+
+# 1.Write a Python program to group numbers by their remainder when divided by 3.
+# Input list: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# Output: {0: [3, 6, 9], 1: [1, 4, 7], 2: [2, 5, 8]
+
+a =  [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+dic = {}
+
+# for i in a:
+#     if(i % 3 == 0):
+#         dic[0] = [i]
+#     elif(i % 3 == 1):
+#         dic[1] = [i]
+#     else:
+#         dic[2] = [i]
+
+# print(dic)
+
+
+
+# for i in a:
+#     reminder = i % 3
+#     if(reminder not in dic):
+#         dic[reminder] = []
+#     else: 
+#         dic[reminder].append(i)
+# print(dic)
+
+
+
+# 2.Write a python program to count how many numbers are greater than 50 and count how many numbers are odd numbers.
+# a=[10, 55, 42, 17, 58]
+# Output: Numbers greater than 50 : 2
+#                 Even numbers : 3
+
+# a = [10, 55, 42, 17, 58]
+
+# grater_50 = 0
+# even = 0
+
+# for i in a:
+#     if(i > 50):
+#         grater_50 += 1
+#     if(i % 2 == 0):
+#         even = even + 1
+
+# print(f'Numbers greater than 50 {grater_50}')
+# print(odd)
+
+
+
+
+
+
+
+# 3.Write a python program to find the highest marks and how many students got them.
+# marks = {'Anu': 85, 'Raj': 90, 'Meena': 92, 'Kiran': 92}
+# Output:
+# Highest Marks : 92
+# Students : ['Meena', 'Kiran']
+
+
+# marks = {'Anu': 85, 'Raj': 90, 'Meena': 92, 'Kiran': 92}
+
+# Highest_Marks =  0
+# Students = []
+
+# for i in marks:
+#     if(marks[i] > Highest_Marks):
+#         Highest_Marks = marks[i]
+
+# for i in marks:
+
+#     if(marks[i] == Highest_Marks):
+#         Students.append(i)
+
+
+# print(Highest_Marks)
+# print(Students)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
