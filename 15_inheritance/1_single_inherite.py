@@ -85,25 +85,28 @@
 
 
   
-class Bank:
-    branch = 'Ahmedabad'
+# class Bank:
+#     branch = 'Ahmedabad'
 
-    def __init__(self,balance):
-        self.balance = balance
+#     def __init__(self,balance):
+#         self.balance = balance
     
 
-class Emp(Bank):
+# class Emp(Bank):
 
-    def __init__(self, balance,name):
-        # super() it is used to access the parent method and constructor 
-        super().__init__(balance)
-        self.name = name
+#     def __init__(self, balance,name):
+#         # super() it is used to access the parent method and constructor 
+#         super().__init__(balance)
+#         self.name = name
 
     
-    def show(self):
-        print(self.branch)
-        print(f'Bank balance is : {self.balance}')
-        print(f'Bank holder name is : {self.name}')
+#     def show(self):
+#         print(self.branch)
+#         print(f'Bank balance is : {self.balance}')
+#         print(f'Bank holder name is : {self.name}')
 
-emp = Emp(100000,'Kaushik')
-emp.show()
+# emp = Emp(100000,'Kaushik')
+# emp.show()
+
+
+

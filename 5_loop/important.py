@@ -530,28 +530,16 @@
 # Input list: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # Output: {0: [3, 6, 9], 1: [1, 4, 7], 2: [2, 5, 8]
 
-a =  [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# a =  [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-dic = {}
-
+# dic = {}
 # for i in a:
-#     if(i % 3 == 0):
-#         dic[0] = [i]
-#     elif(i % 3 == 1):
-#         dic[1] = [i]
+#     rem = i % 3
+#     if(rem not in dic):
+#         dic[rem] = [i]
 #     else:
-#         dic[2] = [i]
+#         dic[rem].append(i)
 
-# print(dic)
-
-
-
-# for i in a:
-#     reminder = i % 3
-#     if(reminder not in dic):
-#         dic[reminder] = []
-#     else: 
-#         dic[reminder].append(i)
 # print(dic)
 
 
@@ -605,49 +593,4 @@ dic = {}
 
 # print(Highest_Marks)
 # print(Students)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -28,23 +28,23 @@
 # Create object of Dog and call both methods.
 
 
-class Animal:
-    def eat(self):
-        print('i am eat paddigree 🦴 ')
+# class Animal:
+#     def eat(self):
+#         print('i am eat paddigree 🦴 ')
 
 
-class Dog(Animal):
-    def bark(self):
-        print('bhavvv bhavvv!')
+# class Dog(Animal):
+#     def bark(self):
+#         print('bhavvv bhavvv!')
 
-obj = Dog()
-obj.eat()
-obj.bark()
+# obj = Dog()
+# obj.eat()
+# obj.bark()
 
 
-#⁡⁢⁣⁣ Create a class Person with attribute name.⁡
-# ⁡⁣⁢⁣Create class Student(Person) that adds attribute rollno.
-# Print student name and rollno using Student object.⁡
+# #⁡⁢⁣⁣ Create a class Person with attribute name.⁡
+# # ⁡⁣⁢⁣Create class Student(Person) that adds attribute rollno.
+# # Print student name and rollno using Student object.⁡
 
 
 # class Person:
@@ -243,41 +243,184 @@ obj.bark()
 # Else → No commission⁡
 
 
-class Employee:
+# class Employee:
 
-    def __init__(self,name,base_salary):
-        self.name = name
-        self.base_salary = base_salary
+#     def __init__(self,name,base_salary):
+#         self.name = name
+#         self.base_salary = base_salary
 
 
-class SalesEmployee(Employee):
+# class SalesEmployee(Employee):
 
-    def __init__(self, name, base_salary,sales_amount):
-        super().__init__(name, base_salary)
-        self.sales_amount = sales_amount
+#     def __init__(self, name, base_salary,sales_amount):
+#         super().__init__(name, base_salary)
+#         self.sales_amount = sales_amount
 
     
-    def final_salary(self):
-        if(self.sales_amount >= 100000):
-            incentive =  (self.sales_amount * 20//100)
-            final_sal = self.base_salary + incentive
-            print(f'congrats! you have incentive {incentive}')
-            print(f'your total salary is {final_sal} 💵')
-        elif(self.sales_amount >= 50000):
-            incentive =  (self.sales_amount * 10//100)
-            final_sal = self.base_salary + incentive
-            print(f'congrats! you have incentive {incentive}')
-            print(f'your total salary is {final_sal} 💵')
-        elif(self.sales_amount >= 20000):
-            incentive =  (self.sales_amount * 5//100)
-            final_sal = self.base_salary +incentive
-            print(f'congrats! you have incentive {incentive}')
-            print(f'your total salary is {final_sal} 💵')
+#     def final_salary(self):
+#         if(self.sales_amount >= 100000):
+#             incentive =  (self.sales_amount * 20//100)
+#             final_sal = self.base_salary + incentive
+#             print(f'congrats! you have incentive {incentive}')
+#             print(f'your total salary is {final_sal} 💵')
+#         elif(self.sales_amount >= 50000):
+#             incentive =  (self.sales_amount * 10//100)
+#             final_sal = self.base_salary + incentive
+#             print(f'congrats! you have incentive {incentive}')
+#             print(f'your total salary is {final_sal} 💵')
+#         elif(self.sales_amount >= 20000):
+#             incentive =  (self.sales_amount * 5//100)
+#             final_sal = self.base_salary +incentive
+#             print(f'congrats! you have incentive {incentive}')
+#             print(f'your total salary is {final_sal} 💵')
+#         else:
+#             print('you have not able to incentive 😕')
+#             print(f'your total salary is {self.base_salary} 💵')
+
+
+# emp1 = SalesEmployee('kaushik',100000,500000)
+# emp1.final_salary()
+
+
+
+
+
+
+# **Q1. Create a class Person with attributes name and age.
+# Create another class Student that inherits from Person and adds a new attribute roll_no.
+# Write code to create an object of Student and print all details.**
+
+
+# class Person:
+
+#     def __init__(self,name, age):
+#         self.name = name
+#         self.age = age
+
+# class Student(Person):
+
+#     def __init__(self, name, age, roll_no):
+#         super().__init__(name, age)
+#         self.roll_no = roll_no
+
+#     def show(self):
+#         print(f'name is : {self.name}')
+#         print(f'age is : {self.age}')
+#         print(f'rollno is : {self.roll_no}')
+
+    
+# std = Student('kaushik',22,13)
+# std.show()
+
+    
+
+# Create a BankAccount base class and a SavingsAccount child class.
+# The base class must handle:
+# account number, holder name, balance
+# deposit()
+# withdraw()
+# show_balance()
+# The child class (SavingsAccount) must add:
+# interest_rate
+# apply_interest() → adds interest to balance
+# A rule: withdrawal cannot exceed balance – 1000 (minimum balance rule)
+# Write the classes and show the output for:
+# Creating a SavingsAccount
+# Depositing money
+# Trying to withdraw more than allowed
+# Applying interest
+
+
+import random
+
+account_num  = random.randint(1111111111,9999999999)
+name = input('enter your name : ')
+age = int(input('enter the age : '))
+address = input('enter your address : ')
+bank_pin = int(input('enter the 4 digit pin : '))
+
+
+
+def show_bank_detail():
+    print(f'your account no : {account_num}')
+    print(f'your name is : {name}')
+    print(f'your age is {age}')
+    print(f'your address is :{address}')
+
+a = input('show your bank datail type yes/no : ')
+
+if(a == 'yes'):
+    b = int(input('enter the bank-pin : '))
+    if(b == bank_pin):
+        show_bank_detail()
+    else:
+        print('incorrect pin!')
+else:
+    print('thank you!')
+
+
+class BankAccount:
+
+    def __init__(self, account_number, holder_name, balance):
+        self.account_number = account_number
+        self.holder_name = holder_name
+        self.balance = balance
+
+    def deposite(self,deposite):
+        self.balance += deposite
+        print(f'{deposite} amount is cradited !')
+
+    def withdrow(self,withdrow):
+        if(withdrow <= self.balance):
+            total = self.balance - withdrow
+            if( total >= 1000):
+                self.balance= self.balance - withdrow
+                print('you are success fully withdrow!')
+            else:
+                print('not withdrow you main tain 1000rs minimyn')
         else:
-            print('you have not able to incentive 😕')
-            print(f'your total salary is {self.base_salary} 💵')
+            print('insaffent balance!')
 
 
-emp1 = SalesEmployee('kaushik',100000,500000)
-emp1.final_salary()
+  
+
+
+class SavingAccount(BankAccount):
+
+    def __init__(self, account_number, holder_name, balance):
+        super().__init__(account_number, holder_name, balance)
+        self.auto_apply_intrest()
+
+    def auto_apply_intrest(self):
+        if self.balance >= 100000:
+            interest = self.balance * 0.10
+            self.balance += interest
+            print(f'Interest added: {interest}')
+        elif self.balance >= 50000:
+            interest = self.balance * 0.05
+            self.balance += interest
+            print(f'Interest added: {interest}')
+        else:
+            print('not eligible for interest rate!')
+
+    def show_balace(self):
+        a = int(input('enter your pin for check balance : : '))
+        if(a == bank_pin):
+            print(f'your balance is : {self.balance}')
+        else:
+            print('wrong pin')
+
+
+
+amount = int(input('enter amount to be started added  : '))
+emp = SavingAccount(account_num,name,amount)
+
+deposit = int(input('enter the deposite amount : '))
+emp.deposite(deposit)
+
+withdrow = int(input('enter the withdrow amount : '))
+emp.withdrow(withdrow)
+
+emp.show_balace()
+
 
