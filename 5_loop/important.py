@@ -552,15 +552,15 @@
 # a = [10, 55, 42, 17, 58]
 
 # grater_50 = 0
-# even = 0
+# odd = 0
 
 # for i in a:
 #     if(i > 50):
 #         grater_50 += 1
-#     if(i % 2 == 0):
-#         even = even + 1
+#     if(i % 2 != 0):
+#         odd = odd + 1
 
-# print(f'Numbers greater than 50 {grater_50}')
+# print(f'Numbers greater than 50 = {grater_50}')
 # print(odd)
 
 
@@ -584,13 +584,60 @@
 # for i in marks:
 #     if(marks[i] > Highest_Marks):
 #         Highest_Marks = marks[i]
-
-# for i in marks:
-
-#     if(marks[i] == Highest_Marks):
+#         Students = [i]
+#     elif(marks[i] == Highest_Marks):
 #         Students.append(i)
 
 
 # print(Highest_Marks)
 # print(Students)
+
+
+
+
+# a = ['python.py','basic.html','loop.py','st.css']
+#output =  ['py', 'html', 'py', 'css']
+
+# new = []
+
+# for i in a:
+#     j = i.split('.')
+#     new.append(j[-1])
+
+# print(new)
+
+
+
+# a = ['python.py','basic.html','loop.py','st.css', 'normal.html', 'static.py']
+
+# #out =  {'py': 3, 'html': 2, 'css': 1}
+
+# dic = {}
+
+# for i in a:
+#     b = i.split('.')
+#     if(b[-1] not in dic):
+#         dic[b[-1]] = 1
+#     else:
+#         dic[b[-1]] += 1
+
+# print(dic)
+
+
+
+# a = ['python.py','basic.html','loop.py','st.css', 'normal.html', 'static.py']
+
+
+# dic = {}
+
+# for i in a:
+#     sp = i.split('.')
+#     if(sp[-1] not in dic):
+#         dic[sp[-1]] = [sp[0]]
+#     else:
+#         dic[sp[-1]] = dic[sp[-1]] + [sp[0]]
+    
+
+# print(dic)
+
 

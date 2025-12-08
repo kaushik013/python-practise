@@ -153,48 +153,51 @@
 # Call common() → find out which one runs (MRO)
 
 
-class Person:
+# class Person:
 
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
-    def show_person(self):
-        print(self.name)
-        print(self.age)
+#     def show_person(self):
+#         print(self.name)
+#         print(self.age)
     
-    def common(self):
-        print('Person Version')
+#     def common(self):
+#         print('Person Version')
 
-class Company:
+# class Company:
 
-    def __init__(self, company_name, locaction):
-        self.company_name = company_name
-        self.locaction = locaction
+#     def __init__(self, company_name, locaction):
+#         self.company_name = company_name
+#         self.locaction = locaction
     
-    def show_company(self):
-        print(self.company_name)
-        print(self.locaction)
+#     def show_company(self):
+#         print(self.company_name)
+#         print(self.locaction)
 
-    def common(self):
-        print('Company Version')
+#     def common(self):
+#         print('Company Version')
 
-class Employee(Person, Company):
+# class Employee(Person, Company):
 
-    def __init__(self, name, age, company_name, locaction, salary, role):
-        super().__init__(name, age)
-        Company.__init__(self,company_name, locaction)
-        self.salary = salary
-        self.role = role
+#     def __init__(self, name, age, company_name, locaction, salary, role):
+#         super().__init__(name, age)
+#         Company.__init__(self,company_name, locaction)
+#         self.salary = salary
+#         self.role = role
 
-    def show_employee(self):
-        self.show_person()
-        self.show_company()
-        print(self.salary)
-        print(self.role)
-        self.common()
+#     def show_employee(self):
+#         self.show_person()
+#         self.show_company()
+#         print(self.salary)
+#         print(self.role)
+#         self.common()
     
 
-emo1 = Employee('janvi',21,'Microsoft','Pune',100000,'AI-ML')
-emo1.show_employee()
+# emo1 = Employee('janvi',21,'Microsoft','Pune',100000,'AI-ML')
+# emo1.show_employee()
+
+
+
 
