@@ -157,6 +157,9 @@
 # Q17. Write a program to display the number names of the digits of a number entered by
 # user, for example if the number is 231 then output should be Two Three One
 # Q18. Write a program to print the Fibonacci series till n terms (Accept n from user) using while loop.
+# Q19. Write a program to print the factorial of a number accepted from user.
+# Q20. Write a program to check whether a number is Armstrong or not. (Armstrong number is
+# a number that is equal to the sum of cubes of its digits for example : 153 = 1^3 + 5^3 + 3^3.)
 
 
 
@@ -263,7 +266,8 @@
 
 # final = ''
 
-# while a > 0:
+# while a > 0: 
+ 
 #     b = a % 10
 #     final = num[b] + ' ' + final
 #     a //= 10
@@ -288,5 +292,40 @@
 #     a,b = b,c
 #     i += 1
 
+
+
+# Q19. Write a program to print the factorial of a number accepted from user.
+
+# a = int(input('enter the number : '))
+
+# i = 1
+# fact = 1
+
+# while i <= a:
+#     fact = fact * i
+#     i += 1
+# print(fact)
+
+
+
+
+# Q20. Write a program to check whether a number is Armstrong or not. (Armstrong number is
+# a number that is equal to the sum of cubes of its digits for example : 153 = 1^3 + 5^3 + 3^3.)
+
+
+a = int(input('enter the num : '))
+temp = a
+
+new = 0
+
+while temp > 0:
+    ld = temp % 10
+    new += ld ** 3 
+    temp //= 10
+
+if(a == new):
+    print('Armstrong number!')
+else:
+    print('not Armstrong number!')
 
 
