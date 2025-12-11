@@ -1,7 +1,7 @@
 
 import random 
 
-num = random.randint(1,10)
+num = random.randint(1,100)
 
 
 trie = 0
