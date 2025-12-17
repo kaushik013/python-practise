@@ -392,12 +392,9 @@
 
 # out = [{{s1001} : {virat : 10}, {s1002} : {rohit : 20}, {s1003} : {rahul : 30}, {s1004} : {kaushik : 40}}]
 
-# final = [{}]
+# final = []
 
 
-# for i in range(len(a)):
-#     final.append()
-
-
-# print(final)
+# for i in range(0,len(c)):
+#     final.append("")
 

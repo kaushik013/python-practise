@@ -31,3 +31,33 @@
 
 
 
+#//! wap check whether the given list is homo genous or hetro genous
+
+# a = eval(input('enter the list : '))
+
+# check = type(a[0])
+
+# for i in a:
+#     if(type(i) != check):
+#         print('hetrogenous list!')
+#         break
+# else:
+#     print('homogenous list!')
+
+
+#//! wap  to extract all the values from the list accept int
+
+# a = eval(input('enter the number : '))
+
+# new = []
+
+# for i in a:
+#     if(type(i) == int):
+#         continue
+#     else:
+#         new.append(i)
+
+# print(new)
+
+
+

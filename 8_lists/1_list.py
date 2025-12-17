@@ -2,11 +2,11 @@
 
 # ⁡⁣⁣⁢what is list ?⁡
 
-# --- > ⁡⁢⁣⁣list is a collection of item(element) that can be of different data type, such as number, 
+#//! --- > ⁡⁢⁣⁣list is a collection of item(element) that can be of different data type, such as number, 
 # string and even other list⁡
 
 
-# ⁡⁣⁢⁣l͟i͟s͟t a͟r͟e o͟r͟d͟e͟r, c͟h͟a͟n͟g͟a͟b͟l͟e͟(͟m͟u͟t͟a͟b͟l͟e͟), a͟n͟d a͟l͟l͟o͟w d͟u͟p͟l͟i͟c͟a͟t͟e v͟a͟l͟u͟e⁡
+#* ⁡⁣⁢⁣l͟i͟s͟t a͟r͟e o͟r͟d͟e͟r, c͟h͟a͟n͟g͟a͟b͟l͟e͟(͟m͟u͟t͟a͟b͟l͟e͟), a͟n͟d a͟l͟l͟o͟w d͟u͟p͟l͟i͟c͟a͟t͟e v͟a͟l͟u͟e⁡
 
 # ⁡⁢⁣⁢Syntax⁡ :
 

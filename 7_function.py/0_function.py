@@ -30,6 +30,17 @@
     # return value
 
 
+#//! types of argument
+
+#//!^ 1. positional argument
+# //^ 2. default argument
+# //^ 3. Keyword argument 
+# //^ 4. Variable Length Arguments (*args)
+# //^ 5. Keyword Variable Length Arguments (**kwargs)
+
+
+
+
 def hello():
     print('this is a hello function')
 hello()

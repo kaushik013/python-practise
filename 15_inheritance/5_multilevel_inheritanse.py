@@ -83,36 +83,33 @@
 
 
 
-# class User:
+class User:
 
-#     username = "kaushik"
-#     phone = "9876543210"
+    username = "kaushik"
+    phone = "9876543210"
 
-#     def validate_phone(self):
-#         if(len(self.phone) >= 10):
-#             return True
-#         else:
-#             return False
+    def validate_phone(self):
+        if(len(self.phone) >= 10):
+            return True
+        else:
+            return False
         
-# class Customer(User):
+class Customer(User):
 
-#     customer_id = 101
-#     wallet_balance = 0
+    customer_id = 101
+    wallet_balance = 0
 
-#     def add_money(self,amount):
-#         self.amount = amount
-#         self.wallet_balance += amount
+    def add_money(self,amount):
+        self.amount = amount
+        self.wallet_balance += amount
 
-#     def show_balance(self):
-#         print(self.wallet_balance)
+    def show_balance(self):
+        print(self.wallet_balance)
 
 
-# class PrimeCustomer(Customer):
+class PrimeCustomer(Customer):
     
-
-
-
-
+    
 
 
 # Phone Valid: True
@@ -121,6 +118,3 @@
 # Cashback (10%): 200.0
 # Final Deducted Amount: 1800.0
 # Remaining Wallet Balance: -1300.0
-
-
-
