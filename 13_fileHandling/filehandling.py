@@ -44,33 +44,33 @@
 # ⁡⁣⁢⁣a+ ----> read + append pointer end⁡ ⁡⁢⁣⁣{no truncate}⁡ ✅
 
 
-# ⁡⁢⁣⁣create file ⁡
-name = input('enter file name : ')
-text = input('enter text : ')
+# # ⁡⁢⁣⁣create file ⁡
+# name = input('enter file name : ')
+# text = input('enter text : ')
 
 
-with open(name,'w')as fs:
-    fs.write(text)
-    print(f'{name} file created! ✅')
+# with open(name,'w')as fs:
+#     fs.write(text)
+#     print(f'{name} file created! ✅')
 
-# ⁡⁢⁣⁣read data⁡
-with open(name,'r')as fs:
-    data = fs.read()
-    print(data)
-
-
-# ⁡⁢⁣⁣append text⁡
-with open(name,'a')as fs:
-    new_data = input('enter text to added ! : ')
-    fs.write('  '+ new_data)
-
-with open(name,'r')as fs:
-    data = fs.read()
-    print(data)
+# # ⁡⁢⁣⁣read data⁡
+# with open(name,'r')as fs:
+#     data = fs.read()
+#     print(data)
 
 
+# # ⁡⁢⁣⁣append text⁡
+# with open(name,'a')as fs:
+#     new_data = input('enter text to added ! : ')
+#     fs.write('  '+ new_data)
 
-#  ⁡⁢⁣⁣for delete file ⁡
-import os
-os.remove(name)
+# with open(name,'r')as fs:
+#     data = fs.read()
+#     print(data)
+
+
+
+# #  ⁡⁢⁣⁣for delete file ⁡
+# import os
+# os.remove(name)
 

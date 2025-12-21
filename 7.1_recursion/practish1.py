@@ -70,4 +70,88 @@
 
 
 
+# def a():
+#     def b():
+#         nonlocal x
+#         print(x,y)
+#         x = 20
+#         print(x+y)
+#     x =10
+#     y = 20
+#     b()
+
+# a()
+
+
+
+# def demo(*args):
+#     print(args)
+#     print(type(args))
+
+# demo('hii','hello')
+# demo(['hii','hello','how are you!'])
+
+
+#//! sum of n number int using 
+# def sum_num(*args):
+#     sum = 0
+#     for i in args:
+#         sum += i
+#     return sum
+
+# print(sum_num(12,13,14))
+
+
+
+# a = 5
+# fact = 1
+# while a > 0:
+#     fact *= a
+#     a -= 1
+# print(fact)
+
+
+
+# def fact(n,i=1):
+#     if(n <= 0):
+#         return i
+#     i *= n
+#     return fact(n -1,i)
+# print(fact(5))
+
+
+# def sum_digit(n,sum = 0):
+#     if(n <= 0):
+#         return sum
+
+#     k = n % 10
+#     if(k % 2 == 0):
+#         sum += k
+#     return sum_digit(n // 10,sum)
+# print(sum_digit(98251))
+    
+
+# a = 98251
+
+# sum = 0
+# while a > 0:
+#     k = a % 10
+#     if(k % 2 ==0):
+#         sum += k
+#     a //= 10
+# print(sum)
+
+
+# class A:
+#     def __init__(self,a):
+#         self.a = a
+        
+#     def __add__(self,other):
+#         return self.a + other.a
+    
+# obj = A(10)
+# obj1 = A(10)
+# print(obj + obj1)
+
+# print(dir(int))
 

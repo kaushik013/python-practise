@@ -641,3 +641,9 @@
 # print(dic)
 
 
+# //! important
+# n=12
+# if (n//2)*2==n:
+#     print("even")
+# else:
+#     print("odd")
