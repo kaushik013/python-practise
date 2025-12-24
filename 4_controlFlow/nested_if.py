@@ -266,7 +266,7 @@
 #     else:
 #         print('product in stock but we cant sale it!')
 # else:
-#     print('not i stock!')
+#     print('not in stock!')
 
 
 

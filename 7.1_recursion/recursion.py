@@ -235,3 +235,12 @@
 # one_to_n(12,10)
 
 
+# def factorial(n,fact = 1):
+#     if(n <= 0):
+#         return fact
+#     fact *= n
+#     return factorial(n - 1,fact)
+
+# print(factorial(5))
+
+

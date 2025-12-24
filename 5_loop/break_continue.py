@@ -58,6 +58,3 @@
 #         new.append(i)
 
 # print(new)
-
-
-

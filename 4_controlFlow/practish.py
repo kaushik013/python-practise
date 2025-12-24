@@ -84,7 +84,7 @@ if(number >= 310):
 
 # n = eval(input('enter type : '))
 
-# if(n ==int or n == type(bool) or n == type(complex) or n == type(float)):
+# if(type(n) == int or type(n) == bool or type(n) == complex or type(n) == float):
 #     print('single value data type!')
 # else:
 #     print('not single value data type!')
@@ -108,7 +108,3 @@ if(number >= 310):
 # else:
 #     print('not grater than 50')
 
-
-
-a = int('11',2)
-print(a)

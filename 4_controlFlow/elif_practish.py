@@ -147,7 +147,7 @@
 # if(a in 'AEIOUaeiou'):
 #     print(f'{a} is vowel character!')
 # elif(a >= 'A' and a <= 'Z' or a >= 'a' and a <= 'z'):
-#     print(f'{a} is digit!')
+#     print(f'{a} is consonant!')
 # else:
 #     print(f'{a} is special character!')
     

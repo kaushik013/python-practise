@@ -153,7 +153,7 @@
 
 
 
-#  ⁡⁢⁣⁢perfect number or not ⁡
+#  ⁡⁢⁣⁢perfect number or not ⁡(divide and sum is equal)
 # a = int(input('enter the num : '))
 
 # b = 0
@@ -355,7 +355,6 @@
 # if string is even reverse the string else count the len 
 
 # a = ['Pythin','hii','holiday','byee']
-
 # # {'Pythin': 'nihtyP', 'hii': 3, 'holiday': 7, 'byee': 'eeyb'}
 
 # dict_my = {}
