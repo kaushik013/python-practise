@@ -86,3 +86,23 @@ def do_work(obj):
 # show_all(Brand())
 
 
+# class Bank:
+
+#     def __init__(self, acc_no, balance):
+#         self.__acc_no = acc_no
+#         self.__balance = balance
+
+#     def get_info(self):
+#         return self._Bank__acc_no,self._Bank__balance
+    
+#     def set_balance(self,amount):
+#         self.__balance += amount
+
+
+
+# per1 = Bank(12345,10000)
+# print(per1.get_info())
+
+# per1.set_balance(500)
+# print(per1.get_info())
+

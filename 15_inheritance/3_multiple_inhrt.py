@@ -200,4 +200,26 @@
 
 
 
+# class A:
+
+#     @staticmethod
+#     def demo():
+#         return 'i am class A'
+    
+# class B:
+
+#     @staticmethod
+#     def demo():
+#         return 'i am class B'
+
+# class C(A,B):
+#     # pass
+
+#     @staticmethod
+#     def demo():
+#         pass
+#         return 'I am class C'
+
+# obj = C()
+# print(obj.demo())
 

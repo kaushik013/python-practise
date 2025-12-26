@@ -89,3 +89,51 @@
 # obj2.work()
 # obj2.code()
 
+
+# class A:
+
+#     a = 10
+#     def __init__(self,value):
+#         self.value = value
+    
+#     @staticmethod
+#     def show():
+#         return 'I am class A'
+    
+# class B(A):
+
+#     b = 20
+#     def __init__(self, value2):
+#         self.value2 = value2
+    
+#     @staticmethod
+#     def show():
+#         return 'I am class B'
+    
+
+# class C(A):
+
+#     c = 30 
+#     def __init__(self, value3):
+#         self.value3 = value3
+    
+#     @staticmethod
+#     def show():
+#         return 'i am class C'
+    
+
+# class D(B,C):
+
+#     d = 40
+#     # pass
+
+#     def __init__(self, value4):
+#         self.value4 = value4
+    
+#     @staticmethod
+#     def show():
+#         return 'I am class D'
+    
+
+# obj = D(100)
+# print(obj.show())

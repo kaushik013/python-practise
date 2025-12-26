@@ -84,64 +84,103 @@
 
 
 # Class 1: User
-class User:
-    def __init__(self, username, phone):
-        self.username = username
-        self.phone = phone
+# class User:
+#     def __init__(self, username, phone):
+#         self.username = username
+#         self.phone = phone
 
-    def validate_phone(self):
-        return len(self.phone) == 10 and self.phone.isdigit()
-
-
-# Class 2: Customer (inherits User)
-class Customer(User):
-    def __init__(self, username, phone, customer_id):
-        super().__init__(username, phone)
-        self.customer_id = customer_id
-        self.wallet_balance = 0
-
-    def add_money(self, amount):
-        self.wallet_balance += amount
-        print(f"₹{amount} added to wallet")
-
-    def show_balance(self):
-        print(f"Wallet Balance: ₹{self.wallet_balance}")
+#     def validate_phone(self):
+#         return len(self.phone) == 10 and self.phone.isdigit()
 
 
-# Class 3: PrimeCustomer (inherits Customer)
-class PrimeCustomer(Customer):
-    def __init__(self, username, phone, customer_id, prime_level):
-        super().__init__(username, phone, customer_id)
-        self.prime_level = prime_level
+# # Class 2: Customer (inherits User)
+# class Customer(User):
+#     def __init__(self, username, phone, customer_id):
+#         super().__init__(username, phone)
+#         self.customer_id = customer_id
+#         self.wallet_balance = 0
 
-    def get_cashback(self, amount):
-        if self.prime_level == "Gold":
-            return amount * 0.05
-        elif self.prime_level == "Platinum":
-            return amount * 0.10
-        elif self.prime_level == "Diamond":
-            return amount * 0.15
-        else:
-            return 0
+#     def add_money(self, amount):
+#         self.wallet_balance += amount
+#         print(f"₹{amount} added to wallet")
 
-    def purchase(self, amount):
-        cashback = self.get_cashback(amount)
-        final_amount = amount - cashback
-
-        if final_amount <= self.wallet_balance:
-            self.wallet_balance -= final_amount
-            print(f"Purchase Amount: ₹{amount}")
-            print(f"Cashback: ₹{cashback}")
-            print(f"Final Amount Paid: ₹{final_amount}")
-            print(f"Remaining Wallet Balance: ₹{self.wallet_balance}")
-        else:
-            print("Insufficient wallet balance")
+#     def show_balance(self):
+#         print(f"Wallet Balance: ₹{self.wallet_balance}")
 
 
-# Example Usage
-pc = PrimeCustomer("kaushik", "9876543210", 101, "Platinum")
+# # Class 3: PrimeCustomer (inherits Customer)
+# class PrimeCustomer(Customer):
+#     def __init__(self, username, phone, customer_id, prime_level):
+#         super().__init__(username, phone, customer_id)
+#         self.prime_level = prime_level
 
-print("Phone Valid:", pc.validate_phone())
+#     def get_cashback(self, amount):
+#         if self.prime_level == "Gold":
+#             return amount * 0.05
+#         elif self.prime_level == "Platinum":
+#             return amount * 0.10
+#         elif self.prime_level == "Diamond":
+#             return amount * 0.15
+#         else:
+#             return 0
 
-pc.add_money(1000)
-pc.purchase(500)
+#     def purchase(self, amount):
+#         cashback = self.get_cashback(amount)
+#         final_amount = amount - cashback
+
+#         if final_amount <= self.wallet_balance:
+#             self.wallet_balance -= final_amount
+#             print(f"Purchase Amount: ₹{amount}")
+#             print(f"Cashback: ₹{cashback}")
+#             print(f"Final Amount Paid: ₹{final_amount}")
+#             print(f"Remaining Wallet Balance: ₹{self.wallet_balance}")
+#         else:
+#             print("Insufficient wallet balance")
+
+
+# # Example Usage
+# pc = PrimeCustomer("kaushik", "9876543210", 101, "Platinum")
+
+# print("Phone Valid:", pc.validate_phone())
+
+# pc.add_money(1000)
+# pc.purchase(500)
+
+
+
+# class Car:
+
+#     def __init__(self,brand):
+#         self.brand = brand
+    
+#     def show(self):
+#         print(self.brand)
+
+# class Toyota(Car):
+
+#     def __init__(self, brand, model, price):
+#         super().__init__(brand)
+#         self.model = model
+#         self.price = price
+    
+#     def show(self):
+#         super().show()
+#         print(self.price)
+
+# class Fortuner(Toyota):
+
+#     def __init__(self, brand, model, price, color, type):
+#         super().__init__(brand, model, price)
+#         self.color = color
+#         self.type = type
+
+#     def show(self):
+#         super().show()
+#         print(self.color)
+#         print(self.type)
+
+
+# car1 = Fortuner('Toyota','26.1-Landovre',7500000,'back','petrol')
+# car1.show()
+
+
