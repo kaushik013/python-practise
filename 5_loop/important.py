@@ -10,7 +10,7 @@
 
 
 
-# 1.⁡⁢⁣⁢Write a program to extract all the lower case character from the give⁡n⁡ 
+#! 1.⁡⁢⁣⁢Write a program to extract all the lower case character from the give⁡n⁡ 
 
 # a = input('enter the string  : ')
 
@@ -25,7 +25,7 @@
 
 
 
-# 2..‍‍‍Write a program to find the length of the longest word  from the string
+#! 2..‍‍‍Write a program to find the length of the longest word  from the string
 
 
 # a = input('enter the sreing : ')
@@ -44,8 +44,9 @@
 # print(f'the longest word length is : "{final}" and word is "{empt}" ')
 
 
-# 3. Write a program to display all the numbers which are divisible by 13 but not by 
-# between 100 and 500.
+
+#! 3. Write a program to display all the numbers which are divisible by 13 but not by 
+#! between 100 and 500.
 
 
 # for i in range(1,1000):
@@ -57,10 +58,9 @@
 
 
 
-# reverse the string 
+#! reverse the string 
 
 # a = input('enter the text : ')
-
 # reverse = ''
 
 # for i in range(len(a)-1,-1,-1):
@@ -69,7 +69,7 @@
 
 
 
-# ⁡⁢⁣⁢extract wovel⁡
+#! ⁡⁢⁣⁢extract wovel⁡
 # a = input('enter the text : ')
 
 # extWovl = ''
@@ -81,7 +81,7 @@
 
 
 
-# ⁡⁢⁣⁢pallindrom or not ⁡
+#! ⁡⁢⁣⁢pallindrom or not ⁡
 
 # a = input('enter the string : ')
 
@@ -626,16 +626,13 @@
 
 # a = ['python.py','basic.html','loop.py','st.css', 'normal.html', 'static.py']
 
-
 # dic = {}
-
 # for i in a:
 #     sp = i.split('.')
 #     if(sp[-1] not in dic):
 #         dic[sp[-1]] = [sp[0]]
 #     else:
 #         dic[sp[-1]] = dic[sp[-1]] + [sp[0]]
-    
 
 # print(dic)
 
