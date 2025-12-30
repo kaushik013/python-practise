@@ -65,7 +65,7 @@
 #     print(i)
 
 
-a = int(input('enter the num : '))
+# a = int(input('enter the num : '))
 
 
 # for i in range(2,a+1,2):

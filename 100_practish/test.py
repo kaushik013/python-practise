@@ -74,13 +74,12 @@
 
 
 
-# 5 wap to print sum of even-position and odd-position digits separately
+#! 5 wap to print sum of even-position and odd-position digits separately
 
 # a = input('enter the num : ')
 
 # even_sum = 0
 # odd_sum = 0
-
 
 # for i in range(0,len(a)):
 #     if(i % 2 == 0):
@@ -123,5 +122,3 @@
 #     j = i.split('.')
 #     l.append(j[-1])
 # print(l)
-
-    

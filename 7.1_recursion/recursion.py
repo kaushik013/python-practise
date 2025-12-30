@@ -244,3 +244,10 @@
 # print(factorial(5))
 
 
+# def extract_vowel(n,i = 0, new = ''):
+#     if(i >= len(n)):
+#         return new
+#     if(n[i] in 'AEIOUaeiou'):
+#         new += n[i]
+#     return extract_vowel(n,i + 1,new)
+# print(extract_vowel('Aeiou'))

@@ -1,6 +1,6 @@
 
 
-# ⁡⁢⁣⁢sum of total element ⁡
+#! ⁡⁢⁣⁢sum of total element ⁡
 #⁡⁣⁢⁣ using loop 🔂
 
 # def sum_arr(arr):
@@ -12,7 +12,7 @@
 # print(sum_arr([1,2,3,4,5,6,7,8,9]))
 
 
-# using recursion 🧠
+#! using recursion 🧠
 
 # def sum_arr(arr):
 #     if(not arr):
@@ -22,7 +22,7 @@
 # print(sum_arr([1,2,3,4,5])) 
 
 
-# ⁡⁢⁣⁢reverse the string⁡
+#! ⁡⁢⁣⁢reverse the string⁡
 # using loop 🔂
 # def revers_str(str):
 #     rev = ''
@@ -32,13 +32,13 @@
 
 # print(revers_str('kaushik'))
 
-# using recursion 🧠
-# def rev_str(str):
-#     if(len(str) <= 1):
-#         return str
-#     return  rev_str(str[1::]) + str[0]
+#! using recursion 🧠
+def rev_str(str):
+    if(len(str) <= 1):
+        return str
+    return  rev_str(str[1::]) + str[0]
 
-# print(rev_str('hello'))
+print(rev_str('hello'))
 
 
 # ⁡⁢⁣⁢factorial ⁡
@@ -77,7 +77,7 @@
 
 
 
-# usinf recursion 
+# using recursion 
 # def reverse_num(num, ex=0):
 #     if(num == 0):
 #         return ex

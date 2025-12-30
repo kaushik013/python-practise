@@ -179,3 +179,12 @@
 #     if(count == i):
 #         print(i)
 
+
+
+# def fibonacci(n,i=1,a=0,b=1):
+#     if(i>n):
+#         return
+#     print(a)
+#     return fibonacci(n,i+1,b,a+b)
+# fibonacci(10)
+

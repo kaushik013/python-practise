@@ -143,9 +143,7 @@
 
 # a = 'example on for loop'
 
-
 # new = ''
-
 # for i in a.split():
 #     new += i[0]+i[-1] + ' '
 
@@ -194,20 +192,20 @@
 #    output={'py':['p1','file1'],'txt':['file2','data'],'com':['google']}
 
 
-a = ['p1.py','file2.txt','file1.py','google.com','data.txt']
+# a = ['p1.py','file2.txt','file1.py','google.com','data.txt']
 
-dic = {}
+# dic = {}
 
-for i in a:
-    new = i.split('.')
-    key = new[-1]
-    value = new[0]
-    if(key not in dic):
-        dic[key] = [value]
-    else:
-        dic[key] = dic[key] + [value]
+# for i in a:
+#     new = i.split('.')
+#     key = new[-1]
+#     value = new[0]
+#     if(key not in dic):
+#         dic[key] = [value]
+#     else:
+#         dic[key] = dic[key] + [value]
 
-print(dic)
+# print(dic)
 
     
 
@@ -261,4 +259,69 @@ print(dic)
 # else:
 #     print('not arm strong number!')
 
+
+# n num of strong num 
+
+# a = int(input('enter the num : '))
+
+# for i in range(1,a+1):
+#     sum = 0
+#     st = str(i)
+#     for j in st:
+#         fact = 1
+#         dgt = int(j)
+#         for k in range(1,dgt+1):
+#             fact *= k
+#         sum += fact
+#     if(sum == i):
+#         print(i)
+
+
+# strong num n numof
+
+
+# a = input('enter the string : ')
+
+
+# dic = {}
+
+# upper_count = 0
+# upper= ''
+# lower_count = 0
+# lower = ''
+# digit_count = 0
+# digit = ''
+# special_count = 0
+# special = ''
+
+
+# for i in a:
+#     if(i >= 'A' and i <= 'Z'):
+#             upper_count += 1
+#             upper += i
+#             dic['upper'] = {upper,upper_count} 
+#     elif(i >= 'a' and i <= 'z'):
+#             lower += i
+#             lower_count += 1
+#             dic['lower'] = {lower,lower_count}
+#     elif(i >= '0' and i <= '9'):
+#             digit_count += 1
+#             digit += i
+#             dic['digit'] = {digit,digit_count}
+#     else:
+#             special_count +=1
+#             special += i
+#             dic['special'] = {special,special_count}
+
+# print(dic)
+
+
+
+
+
+        
+
+            
+        
+            
 

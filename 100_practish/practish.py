@@ -29,8 +29,9 @@
 
 # def arm_strong(n):
 #     new = 0
+#     power = str(len(n))
 #     for i in n:
-#         new += int(i) ** 3
+#         new += int(i) ** int(power)
 #     if new == int(n):
 #         print('armstrong')
 #     else:

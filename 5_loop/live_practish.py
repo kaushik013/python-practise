@@ -117,17 +117,17 @@
 
 
 # ⁡⁢⁣⁣perfect number 1 to 100 ⁡
-# a = int(input('enter the num : '))
-# lis = []
+a = int(input('enter the num : '))
+lis = []
 
-# for i in range(1,a+1):
-#     sum = 0
-#     for j in range(1,i):
-#         if(i%j == 0):
-#             sum += j
-#     if(sum == i):
-#         lis.append(i)
-# print(lis)
+for i in range(1,a+1):
+    sum = 0
+    for j in range(1,i):
+        if(i%j == 0):
+            sum += j
+    if(sum == i):
+        lis.append(i)
+print(lis)
 
 
 
@@ -137,10 +137,11 @@
 
 # temparary = a
 # sum = 0
+# power = len(str(a))
 
 # while temparary > 0:
 #     reminder = temparary % 10
-#     sum = sum + reminder ** 3
+#     sum = sum + reminder ** power
 #     temparary = temparary // 10
 # if(a == sum):
 #     print('armstrong number!')
@@ -157,3 +158,5 @@
 #     new += n[i]
 
 # print(new)
+
+

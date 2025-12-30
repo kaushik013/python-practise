@@ -625,6 +625,8 @@
 
 
 # a = ['python.py','basic.html','loop.py','st.css', 'normal.html', 'static.py']
+#out put {'py': ['python', 'loop', 'static'], 'html': ['basic', 'normal'], 'css': ['st']}
+
 
 # dic = {}
 # for i in a:

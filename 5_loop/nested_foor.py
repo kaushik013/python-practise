@@ -27,7 +27,7 @@
 
 
 # write a program to check whether given num is strong num or not
-# ⁡⁢⁣⁢important!⁡
+#! ⁡⁢⁣⁢important!⁡
 
 # a = int(input('enter the num : '))
 
@@ -103,7 +103,7 @@
 
 
 
-# given num is arm string or not 
+# given num is arm strong or not 
 
 # sum of power of indevidual digit if it is equal to the number then the num is said to be arm strong num 
 # ex 372,,,,153
@@ -160,7 +160,7 @@
 
 
 
-# balance number :
+#! balance number : for odd digit
 
 # a = int(input('enter the num : '))
 
@@ -179,6 +179,7 @@
 #     print('not a balance num')
 
 
+#! balance number : for even digit
 
 # a = int(input('enter the num : '))
 
@@ -218,17 +219,17 @@
 
 
 
-# wrp to print num perfect num up to n
+# wrp to print num prime num up to n
 
-# perfect = []
+# prime = []
 
 # a = int(input('enter the num : '))
 
-# for i in range(1,a+1):
+# for i in range(2,a+1):
 #     conunt = 0
-#     for j in range(1,i+1):
+#     for j in range(2,i):
 #         if(i % j == 0):
 #             conunt += 1
-#     if(conunt == 2):
-#         perfect.append(i)
-# print(perfect)
+#     if(conunt == 0):
+#         prime.append(i)
+# print(prime)

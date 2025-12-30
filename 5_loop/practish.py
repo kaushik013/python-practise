@@ -339,19 +339,30 @@
 # a = "python is fun and python is easy"
 # # output={'python':2,'is':2,'fun':1,'and':1,'easy':1}
 
+# word = a.split()
+
+# dic = {}
+# for i in word:
+#     if(i not in dic):
+#         dic[i] = 1
+#     else:
+#         dic[i] = dic[i] + 1
+# print(dic)
+
+
+
+
+
 # s = 'programs based open comprehension happy'
 
 # new = s.split()
 
-
 # li = []
-
 # for i in new:
 #     if(len(i) % 2 == 0):
 #         li.append(i)
 #     else:
 #         li.append(i[0]+i[-1])
-
 # print(li)
 
 
