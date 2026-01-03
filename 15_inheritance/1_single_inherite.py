@@ -1,6 +1,6 @@
 
 
-# ⁡⁣⁣⁢inheritance = one class (child class) getting properties, methods of another class(parent class)⁡
+#! ⁡⁣⁣⁢inheritance = one class (child class) getting properties, methods of another class(parent class)⁡
 # 
 # ⁡⁣⁢⁣help to code reuse
 # support hierarchy, polymorphism⁡
@@ -10,10 +10,10 @@
 # ⁡⁢⁣⁣it is a special method
 # when  object create then __init__ automatically run
 
-# __init__ is a constructor used to initialize object properties when the object is created.
+#! __init__ is a constructor used to initialize object properties when the object is created.
 
 
-# ⁡⁢⁣⁢Super()⁡
+#! ⁡⁢⁣⁢Super()⁡
 
 # ⁡⁢⁣⁣super() means go to the parent class and used its methods
 
@@ -110,3 +110,44 @@
 
 
 
+# ^ example
+
+class Bank:
+
+    name = 'ICICI'
+    brance = 'Ahmedabad'
+    manager = 'Ashok shah'
+
+    def __init__(self,name,accno,balance):
+        self.name = name
+        self.accno = accno
+        self,balance = balance
+    
+    def show(self):
+        print(self.name)
+        print(self.accno)
+        print(self.brance)
+    
+
+class Another_Bank(Bank):
+
+
+    def __init__(self, name, accno, balance,branch_code):
+        self.name = name
+        self.accno = accno
+        self.balance = balance
+        self.branch_code = branch_code
+
+    def show(self):
+        print(self.name)
+        print(self.accno)
+        print(self.brance)
+        print(self.branch_code)
+    
+    
+
+c1 = Another_Bank('kaushik',90905,10000,'Veraval')
+c1.show()
+
+        
+        
