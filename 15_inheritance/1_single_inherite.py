@@ -110,44 +110,61 @@
 
 
 
-# ^ example
+# # ^ example
 
-class Bank:
+# class Bank:
 
-    name = 'ICICI'
-    brance = 'Ahmedabad'
-    manager = 'Ashok shah'
+#     name = 'ICICI'
+#     brance = 'Ahmedabad'
+#     manager = 'Ashok shah'
 
-    def __init__(self,name,accno,balance):
-        self.name = name
-        self.accno = accno
-        self,balance = balance
+#     def __init__(self,name,accno,balance):
+#         self.name = name
+#         self.accno = accno
+#         self.balance = balance
     
-    def show(self):
-        print(self.name)
-        print(self.accno)
-        print(self.brance)
-    
+#     def show(self):
+#         print(self.name)
+#         print(self.accno)
+#         print(self.brance)
 
-class Another_Bank(Bank):
+#     @classmethod
+#     def dicply_cls(cls):
+#         print(cls.name)
+#         print(cls.brance)
+#         print(cls.manager)
 
-
-    def __init__(self, name, accno, balance,branch_code):
-        self.name = name
-        self.accno = accno
-        self.balance = balance
-        self.branch_code = branch_code
-
-    def show(self):
-        print(self.name)
-        print(self.accno)
-        print(self.brance)
-        print(self.branch_code)
-    
     
 
-c1 = Another_Bank('kaushik',90905,10000,'Veraval')
-c1.show()
+# class Another_Bank(Bank):
+#     loc = 'at.junagadh'
 
+
+#     def __init__(self, name, accno, balance,branch_code):
+#         self.name = name
+#         self.accno = accno
+#         self.balance = balance
+#         self.branch_code = branch_code
+
+#     def show(self):
+#         print(self.name)
+#         print(self.accno)
+#         print(self.brance)
+#         print(self.branch_code)
+    
+#     @classmethod
+#     def dicply_cls(cls):
+#         print(cls.name)
+#         print(cls.brance)
+#         print(cls.manager)
+#         print(cls.loc)
+
+    
+    
+
+# c1 = Another_Bank('kaushik',90905,10000,'Veraval')
+# c1.show()
+# c1.dicply_cls()
         
         
+
