@@ -124,47 +124,117 @@
 #         self.balance = balance
     
 #     def show(self):
-#         print(self.name)
-#         print(self.accno)
-#         print(self.brance)
+#        return self.name,self.accno,self.balance
 
 #     @classmethod
 #     def dicply_cls(cls):
-#         print(cls.name)
-#         print(cls.brance)
-#         print(cls.manager)
+#         return cls.name,cls.brance,cls.manager
 
-    
 
 # class Another_Bank(Bank):
 #     loc = 'at.junagadh'
 
-
-#     def __init__(self, name, accno, balance,branch_code):
-#         self.name = name
-#         self.accno = accno
-#         self.balance = balance
+#     def __init__(self, name, accno, balance, branch_code):
+#         super().__init__(name, accno, balance)
 #         self.branch_code = branch_code
 
 #     def show(self):
-#         print(self.name)
-#         print(self.accno)
-#         print(self.brance)
-#         print(self.branch_code)
-    
+#         total = super().show()
+#         new = total + (self.branch_code,)
+#         return new
+
 #     @classmethod
 #     def dicply_cls(cls):
-#         print(cls.name)
-#         print(cls.brance)
-#         print(cls.manager)
-#         print(cls.loc)
-
-    
-    
+#         clas = super().dicply_cls()
+#         total = clas + (cls.loc,)
+#         return total
 
 # c1 = Another_Bank('kaushik',90905,10000,'Veraval')
-# c1.show()
-# c1.dicply_cls()
+# print('object method : ',c1.show())
+# print('class method : ',c1.dicply_cls())
         
         
+# # !  Example
+
+# class Parent:
+
+#     def __init__(self, a, b):
+#         self.a  = a
+#         self.b = b
+    
+#     def show(self):
+#         return self.a, self.b
+
+# class Child(Parent):
+
+#     def __init__(self, a, b, c):
+#         super().__init__(a, b)
+#         self.c = c
+
+#     def show(self):
+#         ttl = super().show()
+#         total = ttl + (self.c,)
+#         return total
+
+# c1 = Child(12,13,14)
+# print(c1.show())
+
+
+
+#! if we need some values
+# class Parent:
+#     def __init__(self, a, b):
+#         self.a = a
+#         self.b = b
+
+# class Child(Parent):
+#     def __init__(self, a, c):
+#         super().__init__(a, c)  
+#         self.c = c
+
+# c1 = Child(12, 14)
+# print(c1.a, c1.c)
+
+# ! create a class school and perform a single level inheritance into another class college by implement constructor chaining as well as method chaining
+
+
+class School:
+
+    def __init__(self, name, mobile, sid):
+        self.name = name
+        self.mobile = mobile
+        self.sid = sid
+    
+    def show(self):
+        return self.name, self.mobile, self.sid 
+
+class College(School):
+
+    def __init__(self, name, mobile, sid, per, stream):
+        super().__init__(name, mobile, sid)
+        self.per = per
+        self.stream = stream
+
+    def show(self):
+        ttl = super().show()
+        total = ttl + (self.per, self.stream)
+        College.totalll(total)
+
+    @staticmethod
+    def totalll(total):
+        print('name : ',total[0])
+        print('mobile no  : ',total[1])
+        print('sid : ',total[2])
+        print('per  : ',total[3])
+        print('stream  : ',total[4])
+
+
+
+std = College('kaushik',9016883191,1213,'90%','commerce')
+# print(std.show())
+std.show()
+
+# for i in std.show():
+#     print(i)
+
 
