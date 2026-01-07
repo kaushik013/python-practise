@@ -223,129 +223,91 @@
 # obj = C()
 # print(obj.demo())
 
-# ! example 
 
-# class Company:
 
-#     def __init__(self, name, address):
-#         self.name = name 
-#         self.address = address
+# !   Example
 
-#     def show(self):
-#         return self.name, self.address
-    
-# class Google(Company):
+# class Toyota:
 
-#     def __init__(self, name, address, branch, ceo):
-#         super().__init__(name, address)
-#         self.branch = branch
-#         self.ceo = ceo
-#         # return ttl + (self.branch, self.ceo)
+#     def __init__(self, model):
+#         self.model = model
     
 #     def show(self):
-#         ttl = super().show()
-#         return ttl + (self.branch, self.ceo)
+#         return self.model
     
-# class Employee(Google):
+# class Tata:
 
-#     def __init__(self, name, address, branch, ceo, ename, salary):
-#         super().__init__(name, address, branch, ceo)
-#         self.ename = ename
-#         self.salary = salary
+#     def __init__(self,model):
+#         self.model = model
     
 #     def show(self):
-#         ttl = super().show()
-#         return ttl + (self.ename, self.salary)
-    
+#         return self.model
 
-# obj = Employee('Google','Ahmedabad','Nikol','Aman dhattrwal','kaushik',90000)
-# li = ['Company name is  : ','Address is : ','Branch is : ','CEO is : ','Ename is : ','Salary is : ']
+# class Hundai:
 
-
-# for i,j in zip(li,obj.show()):
-#     print(i,j)
-
-#! MRO - method resoluction order
-# print(Employee.mro())
-
-
-
-# ! Example
-
-# class Grandfather:
-
-#     def __init__(self,grand_father):
-#         self.grand_father = grand_father
+#     def __init__(self, model):
+#         self.model = model
     
 #     def show(self):
-#         return self.grand_father
-
-# class Father(Grandfather):
-
-#     def __init__(self, grand_father, father):
-#         super().__init__(grand_father)        
-#         self.father = father
+#         return self.model
     
-#     def show(self):
-#         total = super().show()
-#         ttl = self.father + ' ' + total
+# class Car(Toyota,Tata,Hundai):
+#     pass
+
+
+# obj = Car('Fortuner')
+# print(obj.show())
+# print(Car.mro())
+
+
+# ! calculator
+
+# class Add:
+
+#     @staticmethod
+#     def addition(*args):
+#         out = 0
+#         for i in args:
+#             out += i
+#         ttl = f'Total sum is :{out}'
 #         return ttl
+
+# class Multipli:
+
+#     @staticmethod
+#     def mul(*args):
+#         total = 1
+#         for i in args:
+#             total *= i
+#         ttl = f'Total multiply is : {total}'
+#         return ttl
+
+# class Fact:
+
+#     @staticmethod
+#     def factorial(*args):
+#         lis = []
+#         for i in args:
+#             fact = 1
+#             for j in range(1,i+1):
+#                 fact *= j
+#             lis.append(fact)
+#         return lis
+
+
+# class Calclutor(Add,Multipli,Fact):
+#     pass
+
+# # obj = Calclutor()
+# # print(obj.addition(1,2,3,4,5))
+
     
-# class Son(Father):
+# # obj1 = Calclutor()
+# # print(obj1.mul(1,2,3,4,5))
 
-#     def __init__(self, grand_father, father, name):
-#         super().__init__(grand_father, father)
-#         self.name = name 
-    
-#     def show(self):
-#         ttl = super().show()
-#         total = self.name
-#         return total + ' ' + ttl
-    
-# obj = Son('Omprakash','Sanjay','kabir')
-# print(obj.show())
+# obj2 = Calclutor()
+# print(obj2.factorial(5,4))
 
 
-# ! create a class whehical and perform numlti level inheritance in to the other two classes electric car and car 
 
-
-class Whehical:
-
-    def __init__(self,brand):
-
-        self.brand = brand
-
-    def show(self):
-        return  self.brand
-
-class Car(Whehical):
-
-    def __init__(self, brand, name):
-        super().__init__(brand)
-        self.name = name
-    
-    def show(self):
-        ttl = super().show()
-        total = ttl + ' ' + self.name
-        return  total
-    
-class Electric(Car):
-
-    def __init__(self, brand, name, Electric_name):
-        super().__init__(brand, name)
-        self.Electric_name = Electric_name
-    
-    def show(self):
-        ttl = super().show()
-        total = ttl + ' ' + self.Electric_name
-        return total
-    
-obj = Electric('Toyota','Fortuner','Enova')
-# print(obj.show())
-
-li = ['The brand is : ','Fuel car is : ','Electric car is : ']
-spl =  obj.show()
-
-for i,j in zip(li,spl.split()):
-    print(i,j)
-
+# ! create a class 

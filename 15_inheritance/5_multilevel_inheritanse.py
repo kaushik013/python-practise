@@ -184,3 +184,129 @@
 # car1.show()
 
 
+# ! example 
+
+# class Company:
+
+#     def __init__(self, name, address):
+#         self.name = name 
+#         self.address = address
+
+#     def show(self):
+#         return self.name, self.address
+    
+# class Google(Company):
+
+#     def __init__(self, name, address, branch, ceo):
+#         super().__init__(name, address)
+#         self.branch = branch
+#         self.ceo = ceo
+#         # return ttl + (self.branch, self.ceo)
+    
+#     def show(self):
+#         ttl = super().show()
+#         return ttl + (self.branch, self.ceo)
+    
+# class Employee(Google):
+
+#     def __init__(self, name, address, branch, ceo, ename, salary):
+#         super().__init__(name, address, branch, ceo)
+#         self.ename = ename
+#         self.salary = salary
+    
+#     def show(self):
+#         ttl = super().show()
+#         return ttl + (self.ename, self.salary)
+    
+
+# obj = Employee('Google','Ahmedabad','Nikol','Aman dhattrwal','kaushik',90000)
+# li = ['Company name is  : ','Address is : ','Branch is : ','CEO is : ','Ename is : ','Salary is : ']
+
+
+# for i,j in zip(li,obj.show()):
+#     print(i,j)
+
+#! MRO - method resoluction order
+# print(Employee.mro())
+
+
+
+# ! Example
+
+# class Grandfather:
+
+#     def __init__(self,grand_father):
+#         self.grand_father = grand_father
+    
+#     def show(self):
+#         return self.grand_father
+
+# class Father(Grandfather):
+
+#     def __init__(self, grand_father, father):
+#         super().__init__(grand_father)        
+#         self.father = father
+    
+#     def show(self):
+#         total = super().show()
+#         ttl = self.father + ' ' + total
+#         return ttl
+    
+# class Son(Father):
+
+#     def __init__(self, grand_father, father, name):
+#         super().__init__(grand_father, father)
+#         self.name = name 
+    
+#     def show(self):
+#         ttl = super().show()
+#         total = self.name
+#         return total + ' ' + ttl
+    
+# obj = Son('Omprakash','Sanjay','kabir')
+# print(obj.show())
+
+
+# ! create a class whehical and perform numlti level inheritance in to the other two classes electric car and car 
+
+
+# class Whehical:
+
+#     def __init__(self,brand):
+
+#         self.brand = brand
+
+#     def show(self):
+#         return  self.brand
+
+# class Car(Whehical):
+
+#     def __init__(self, brand, name):
+#         super().__init__(brand)
+#         self.name = name
+    
+#     def show(self):
+#         ttl = super().show()
+#         total = ttl + ' ' + self.name
+#         return  total
+    
+# class Electric(Car):
+
+#     def __init__(self, brand, name, Electric_name):
+#         super().__init__(brand, name)
+#         self.Electric_name = Electric_name
+    
+#     def show(self):
+#         ttl = super().show()
+#         total = ttl + ' ' + self.Electric_name
+#         return total
+    
+# obj = Electric('Toyota','Fortuner','Enova')
+# # print(obj.show())
+
+# li = ['The brand is : ','Fuel car is : ','Electric car is : ']
+# spl =  obj.show()
+
+# for i,j in zip(li,spl.split()):
+#     print(i,j)
+

@@ -137,3 +137,67 @@
 
 # obj = D(100)
 # print(obj.show())
+
+
+
+
+# ! example
+# import random
+
+# class SocialMedia:
+
+#     def __init__(self, user_name, password, followers, following, story):
+#         self.uid = random.randint(11111,99999)
+#         self.user_name = user_name
+#         self.password = password
+#         self.followers = followers
+#         self.following = following
+#         self.story = story
+
+#     def details(self):
+#         return self.user_name, self.password, self.followers, self.following, self.story
+    
+
+#     def add_followers(self):
+#         self.followers += 1
+    
+#     def remove_following(self):
+#         self.following -= 1
+
+
+# class Snap(SocialMedia):
+
+#     lis = ['username : ','password : ','followers : ','following : ','story : ','stricks : ']
+#     def __init__(self, user_name, password, followers, following, story, stricks):
+#         super().__init__(user_name, password, followers, following, story)
+#         self.stricks = stricks
+    
+#     def details(self):
+#         ttl = super().details()
+#         total = ttl + (self.stricks,)
+#         return total
+
+
+# class Facebook(SocialMedia):
+
+#     lis = ['username : ','password : ','followers : ','following : ','story : ','videos : ']
+
+#     def __init__(self, user_name, password, followers, following, story, video):
+#         super().__init__(user_name, password, followers, following, story)
+#         self.video = video
+    
+#     def details(self):
+#         ttl = super().details()
+#         total = ttl + (self.video,)
+#         return total
+    
+
+
+# obj = Snap('Kaushik_13',1234,50,10,3,500)
+
+# for i,j in zip(Snap.lis,obj.details()):
+#     print(i,j)
+
+# obj1 = Facebook('Ram',12345,300,200,5,10)
+# for i,j in zip(Facebook.lis,obj1.details()):
+#     print(i,j)
