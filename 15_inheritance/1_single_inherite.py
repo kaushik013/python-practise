@@ -198,43 +198,87 @@
 # ! create a class school and perform a single level inheritance into another class college by implement constructor chaining as well as method chaining
 
 
-class School:
+# class School:
 
-    def __init__(self, name, mobile, sid):
-        self.name = name
-        self.mobile = mobile
-        self.sid = sid
+#     def __init__(self, name, mobile, sid):
+#         self.name = name
+#         self.mobile = mobile
+#         self.sid = sid
     
-    def show(self):
-        return self.name, self.mobile, self.sid 
+#     def show(self):
+#         return self.name, self.mobile, self.sid 
 
-class College(School):
+# class College(School):
 
-    def __init__(self, name, mobile, sid, per, stream):
-        super().__init__(name, mobile, sid)
-        self.per = per
-        self.stream = stream
+#     def __init__(self, name, mobile, sid, per, stream):
+#         super().__init__(name, mobile, sid)
+#         self.per = per
+#         self.stream = stream
 
-    def show(self):
-        ttl = super().show()
-        total = ttl + (self.per, self.stream)
-        College.totalll(total)
+#     def show(self):
+#         ttl = super().show()
+#         total = ttl + (self.per, self.stream)
+#         College.totalll(total)
 
-    @staticmethod
-    def totalll(total):
-        print('name : ',total[0])
-        print('mobile no  : ',total[1])
-        print('sid : ',total[2])
-        print('per  : ',total[3])
-        print('stream  : ',total[4])
-
-
-
-std = College('kaushik',9016883191,1213,'90%','commerce')
-# print(std.show())
-std.show()
-
-# for i in std.show():
-#     print(i)
+#     @staticmethod
+#     def totalll(total):
+#         print('name : ',total[0])
+#         print('mobile no  : ',total[1])
+#         print('sid : ',total[2])
+#         print('per  : ',total[3])
+#         print('stream  : ',total[4])
 
 
+
+# std = College('kaushik',9016883191,1213,'90%','commerce')
+# # print(std.show())
+# std.show()
+
+# # for i in std.show():
+# #     print(i)
+
+
+# class Bank:
+
+#     def __init__(self, balance):
+#         self.balance = balance
+
+    
+#     def add_balance(self):
+#         self.balance += int(input('enter the amount to add : '))
+    
+#     def withdrow(self):
+#         widrw = int(input('enter the withdrow amount : '))
+#         if(widrw <= self.balance):
+#             total = self.balance - widrw
+#             if(total >= 5000):
+#                 if(widrw >= 500):
+#                     print(f'Success fully withdrowl ! {widrw} ✅')
+#                     print('press yes to check balance : ')
+#                     inp = input('yes or no  : ')
+#                     if(inp == 'yes' or inp == 'Yes'):
+#                         print('your balance is : ',self.balance - widrw)
+#                         check = input('enter add to deposit : add / no : ')
+#                         if(check == 'add'):
+#                             ad = int(input('enter the num : '))
+#                             self.balance += ad 
+#                             print(f'amount cradited! {ad} ✅')
+#                         else:
+#                             print('thank you!')
+#                     else:
+#                         print('thank you !')
+#                 else:
+#                     print('amount must be > 500Rs 🆙')
+#             else:
+#                 print('please mentain 5000 amount 😕')
+#         else:
+#             print('insuffacient amount!')
+    
+    
+
+#     def details(self):
+#         return self.balance
+
+# obj = Bank(6000)
+# obj.withdrow()
+# # print(obj.details())
