@@ -238,47 +238,47 @@
 # #     print(i)
 
 
-# class Bank:
+class Bank:
 
-#     def __init__(self, balance):
-#         self.balance = balance
+    def __init__(self, balance):
+        self.balance = balance
 
     
-#     def add_balance(self):
-#         self.balance += int(input('enter the amount to add : '))
+    def add_balance(self):
+        self.balance += int(input('enter the amount to add : '))
     
-#     def withdrow(self):
-#         widrw = int(input('enter the withdrow amount : '))
-#         if(widrw <= self.balance):
-#             total = self.balance - widrw
-#             if(total >= 5000):
-#                 if(widrw >= 500):
-#                     print(f'Success fully withdrowl ! {widrw} ✅')
-#                     print('press yes to check balance : ')
-#                     inp = input('yes or no  : ')
-#                     if(inp == 'yes' or inp == 'Yes'):
-#                         print('your balance is : ',self.balance - widrw)
-#                         check = input('enter add to deposit : add / no : ')
-#                         if(check == 'add'):
-#                             ad = int(input('enter the num : '))
-#                             self.balance += ad 
-#                             print(f'amount cradited! {ad} ✅')
-#                         else:
-#                             print('thank you!')
-#                     else:
-#                         print('thank you !')
-#                 else:
-#                     print('amount must be > 500Rs 🆙')
-#             else:
-#                 print('please mentain 5000 amount 😕')
-#         else:
-#             print('insuffacient amount!')
+    def withdrow(self):
+        widrw = int(input('enter the withdrow amount : '))
+        if(widrw <= self.balance):
+            total = self.balance - widrw
+            if(total >= 5000):
+                if(widrw >= 500):
+                    print(f'Success fully withdrowl ! {widrw} ✅')
+                    print('press yes to check balance : ')
+                    inp = input('yes or no  : ')
+                    if(inp == 'yes' or inp == 'Yes'):
+                        print('your balance is : ',self.balance - widrw)
+                        check = input('enter add to deposit : add / no : ')
+                        if(check == 'add'):
+                            ad = int(input('enter the num : '))
+                            self.balance += ad 
+                            print(f'amount cradited! {ad} ✅')
+                        else:
+                            print('thank you!')
+                    else:
+                        print('thank you !')
+                else:
+                    print('amount must be > 500Rs 🆙')
+            else:
+                print('please mentain 5000 amount 😕')
+        else:
+            print('insuffacient amount!')
     
     
 
-#     def details(self):
-#         return self.balance
+    def details(self):
+        return self.balance
 
-# obj = Bank(6000)
-# obj.withdrow()
-# # print(obj.details())
+obj = Bank(6000)
+obj.withdrow()
+# print(obj.details())

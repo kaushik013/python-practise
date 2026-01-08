@@ -96,3 +96,71 @@ s = Student("Kaushik")
 # print(obj.get_mark())
 
 
+
+
+# class Bank:
+
+#     __branch_manager = 'Dhaval Agrawal'
+
+#     def __init__(self, account_no, balance):
+#         self.__account_no = account_no
+#         self.__balance = balance
+    
+
+# obj = Bank(123456,90000)
+# print(obj.__account_no)
+# print(obj.__balance) 
+# print(obj.__branch_manager)
+        
+
+# ! example
+
+# class A:
+
+#     __a = 12
+
+#     def __init__(self,value1,value2):
+#         self.__value1 = value1
+#         self.__value2 = value2
+
+    # def show(self):
+    #     return self.__value1,self.__value2
+
+    # def __show(self):
+    #     return self.__value1,self.__value2
+
+# obj = A(12,13)
+# print(obj.__show())
+
+
+
+# ! example
+
+class Bank:
+
+    __name = 'HDFC Bank'
+    __Branch = 'Navrangpura'
+
+
+    def __init__(self,Accno,balance):
+        self.__Accno = Accno
+        self.__balance = balance
+    
+    def getter_balance(self):
+        return self._Bank__balance
+
+    def setter_balance(self,new):
+        self.__balance += new
+
+    @classmethod
+    def name(cls):
+        return cls._Bank__name, cls._Bank__Branch
+    
+
+obj = Bank(12313,50000)
+print(obj.getter_balance())
+obj.setter_balance(10000)
+print(obj.getter_balance())
+print(Bank.name())
+
+        
