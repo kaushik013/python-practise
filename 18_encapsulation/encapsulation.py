@@ -136,31 +136,126 @@ s = Student("Kaushik")
 
 # ! example
 
-class Bank:
+# class Bank:
 
-    __name = 'HDFC Bank'
-    __Branch = 'Navrangpura'
+#     __name = 'HDFC Bank'
+#     __Branch = 'Navrangpura'
 
 
-    def __init__(self,Accno,balance):
-        self.__Accno = Accno
-        self.__balance = balance
+#     def __init__(self,Accno,balance):
+#         self.__Accno = Accno
+#         self.__balance = balance
     
-    def getter_balance(self):
-        return self._Bank__balance
+#     def getter_balance(self):
+#         return self._Bank__balance
 
-    def setter_balance(self,new):
-        self.__balance += new
+#     def setter_balance(self,new):
+#         self.__balance += new
+    
+#     @classmethod
+#     def getter_branch(cls):
+#         return cls._Bank__Branch
 
-    @classmethod
-    def name(cls):
-        return cls._Bank__name, cls._Bank__Branch
+#     @classmethod
+#     def setter_branch(cls,new):
+#         cls._Bank__Branch = new
+
+#     @classmethod
+#     def name(cls):
+#         return cls._Bank__name, cls._Bank__Branch
     
 
-obj = Bank(12313,50000)
-print(obj.getter_balance())
-obj.setter_balance(10000)
-print(obj.getter_balance())
-print(Bank.name())
+# obj = Bank(12313,50000)
+# print(Bank.getter_branch())
+# Bank.setter_branch('SP stadium')
+# print(Bank.getter_branch())
+
+
+# print(obj.getter_balance())
+# obj.setter_balance(10000)
+# print(obj.getter_balance())
+# print(Bank.name())
 
         
+# ! method  over loading 
+
+# class Demo:
+
+#     @staticmethod
+#     def demo():
+#         print('hii')
+    
+#     @staticmethod
+#     def demo(a):
+#         print(a)
+#         print('hello')
+
+# Demo.demo(12)
+
+
+# ! method overriding
+
+# class Parent:
+
+#     @staticmethod
+#     def demo():
+
+#         print('hii')
+    
+
+# class Child(Parent):
+
+#     @staticmethod
+#     def demo(a):
+#         print('hello')
+#         print(a)
+    
+# obj = Child()
+# obj.demo(12)
+
+
+# ! monkey paching
+
+
+# class Parent:
+
+#     @staticmethod
+#     def demo():
+#         print('i am from  parent class')
+    
+#     backup = demo
+    
+
+# class Child(Parent):
+#     @staticmethod
+#     def demo(a):
+#         print('i am from child class')
+#         print(a)
+    
+# obj = Child()
+# obj.demo(12)
+# obj.backup()
+
+
+# ! Example of monkey paching
+
+# class Demo:
+#     @staticmethod
+#     def sam():
+#         print('good evening!')
+#     first = sam
+    
+#     @staticmethod
+#     def sam(a,b):
+#         print(a,b)
+#     second = sam
+
+#     @staticmethod
+#     def sam(a,b,c):
+#         print(a,b,c)
+#     third = sam
+
+# obj = Demo()
+# obj.first()
+# obj.second(12,13)
+# obj.third(12,13,14)
