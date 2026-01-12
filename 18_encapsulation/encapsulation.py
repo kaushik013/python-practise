@@ -259,3 +259,153 @@ s = Student("Kaushik")
 # obj.first()
 # obj.second(12,13)
 # obj.third(12,13,14)
+
+
+#!  create calss whehical with method drive create sub classes car,bike overriding the drive method
+
+# class Vehical:
+
+#     def drive(self):
+#         print('whehical is started...')
+    
+# class Car(Vehical):
+
+#     def drive(self):
+#         print('Car is rinning....')
+    
+# class Bike(Vehical):
+    
+#     def drive(self):
+#         print('Bike is running')
+
+# obj = Bike()
+# obj.drive()
+
+
+#! demonstrangth inheritance from class person to derived class teacher and perform the following instruction 
+#^ base class should have  name and age 
+#^ derieved class should add subject 
+#^ display all the details using display method 
+
+
+# class Person:
+
+#     def __init__(self, name , age):
+#         self.name = name 
+#         self.age = age 
+
+#     def display(self):
+#         return self.name, self.age
+
+# class Teacher(Person):
+
+#     def __init__(self, name, age, subject):
+#         super().__init__(name, age)
+#         self.subject = subject
+    
+#     def display(self):
+#         ttl = super().display()
+#         total = ttl + (self.subject,)
+#         return total
+
+# lis = ['name is : ','age is : ', 'subject is : ']
+
+# per1 = Teacher('Yashraj',24,'Pythin')
+
+# for i,j in zip(lis,per1.display()):
+#     print(i,j)
+
+
+# ! create class employee with a method calculate calary create two sub classes manager and programer and in each of the sub class override ther calclulate salary method in order to return the salary based on the specific role 
+
+# class Employee: 
+
+#     def __init__(self,name, age):
+#         self.name = name
+#         self.age = age
+#         self.base_salary = 10000
+        
+#     def calculate(self):
+#         return self.base_salary
+
+# class Manager(Employee):
+
+#     def __init__(self, name, age,year_exp):
+#         super().__init__(name, age)
+#         self.year_exp = year_exp
+
+#     def calculate(self):
+#         ttl = super().calculate()
+#         total = ttl + 10000 * self.year_exp 
+#         return total
+
+# class Programmer(Employee):
+
+#     def __init__(self, name, age, year_exp):
+#         super().__init__(name, age)
+#         self.year_exp = year_exp
+
+#     def calculate(self):
+#         ttl = super().calculate()
+#         total = ttl + 20000 * self.year_exp
+#         return total 
+
+# obj = Manager('kaushik',22,3)
+# print('total manager salary : ',obj.calculate())
+
+
+# obj1 = Programmer('dharmesh',23,2)
+# print('total programmer salary  : ',obj1.calculate())
+
+#! create a class shape with method get area and get perimater and create three sub classes circle, rantangle, square overriding get area and get perimater and each of the sub class 
+
+
+# class Shape:
+#     def get_area(self):
+#         pass
+
+#     def get_perimeter(self):
+#         pass
+
+
+# class Circle(Shape):
+
+#     def __init__(self,radius):
+#         self.radius = radius
+    
+#     def get_area(self):
+#         return 3.14 * self.radius * self.radius
+    
+#     def get_perimeter(self):
+#         return 2 * 3.14 * self.radius
+
+# class Ractangle(Shape):
+
+#     def __init__(self, length, width):
+#         self.length = length
+#         self.width = width
+
+#     def get_area(self):
+#         return self.length * self.width
+
+
+#     def get_perimeter(self):
+#         return 2 * (self.length + self.width)
+    
+
+# class Square(Shape):
+
+#     def __init__(self,side):
+#         self.side  = side
+    
+#     def get_area(self):
+#         return self.side * self.side
+    
+#     def get_perimeter(self):
+#         return 4 * self.side
+
+# obj = Circle(13)
+# print(obj.get_area())
+# print(obj.get_perimeter())
+
+       

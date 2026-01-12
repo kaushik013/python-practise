@@ -1,6 +1,12 @@
 
 # ⁡⁢⁣⁡⁣⁣⁢OOPS = Object Oriented Programming System⁡
 
+#! alternative name of class 
+
+#^ parent class / super class / base class 
+#^ child class / sub class /  derived class 
+
+
 
 # ⁡⁢⁣⁣oops is a way to write a program using object⁡
 
