@@ -409,3 +409,91 @@
 # for i in range(0,len(c)):
 #     final.append("")
 
+
+
+
+# a = input('enter the str : ')
+
+# new = ''
+
+# for i in a:
+#     if(i >= 'a' and i <= 'z'):
+#         if(ord(i) % 2 == 0):
+#             new += i
+# print(new)
+
+
+# a = input('enter the str : ')
+
+# new = ''
+
+# for i in a:
+#     upper = chr(ord(i) - 32)
+#     lower = chr(ord(i) + 32)
+#     if(i >= 'A' and i <= 'Z'):
+#         new += lower
+#     elif(i >= 'a' and i <= 'z'):
+#         new += upper
+#     else:
+#         new += i
+
+# print(new)
+
+
+# wap  get the following op 
+
+# a = 'ababccb'
+# dic = {}
+
+# for i in a:
+#     if(i not in dic):
+#         dic[i] = 1
+#     else:
+#         dic[i] += 1
+# print(dic)
+
+
+# w a p to swape the key and value from dic
+# a = {'A' : 100, 'B' : 200, 'C' : 300, 'D' : 400}
+
+# new = {}
+
+# for i in a:
+#     new[a[i]] = i
+# print(new)
+
+
+
+
+# balance  number or not 
+
+a = int(input('enter the num : '))
+
+string = str(a)
+
+leng = len(string)
+mid = leng // 2
+
+if(leng % 2 == 0):
+    left = 0
+    for i in range(mid-1):
+        left += int(string[i])
+    right = 0
+    for i in range(mid+1,leng):
+        right += int(string[i])
+    if(left == right):
+        print('balance num')
+    else:
+        print('not balance')
+else:
+    left = 0
+    for i in range(mid):
+        left += int(string[i])
+    right = 0
+    for i in range(mid+1,leng):
+        right += int(string[i])
+    if(left == right):
+        print('balance num')
+    else:
+        print('not balance')
+
