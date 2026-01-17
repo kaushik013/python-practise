@@ -66,11 +66,12 @@
 
 
 #! get following op 
-# a = ['python','java','holiday','people']
+# op =  {'python': 6, 'java': 4, 'holiday': 7, 'people': 6}
 
-# result = dict(map(lambda n : (n , len(n)), a))
-# print(result)
+a = ['python','java','holiday','people']
+result = dict(map(lambda n : (n , len(n)), a))
+print(result)
 
-#^ or
+# ^ or
 
-# print(dict(map(lambda n : (n, len(n)), ['python','java','holiday','people'])))
+print(dict(map(lambda n : (n, len(n)), ['python','java','holiday','people'])))

@@ -18,7 +18,7 @@
 # result = lambda n : n % 2 == 0
 # print(result(12))
 
-#! check data is dingle value or multivalue
+#! check data is single value or multivalue
 # data = lambda n : type(n) in [str,list,set,dict,tuple]
 # print(data('hello'))
 
