@@ -9,11 +9,11 @@
 
 a = [12,3.4,True,'Python',34]
 
-# value = filter(lambda n : type(n) == int, a)
-# print(list(value))
+value = filter(lambda n : type(n) == int, a)
+print(list(value))
 
 
-#! extract all value all the touple
+#! extract all value if start with upper case and end with lower case all the touple
  
 a = (10,2.3,'Supritha','pythoN','Ugadi')
 
@@ -24,7 +24,7 @@ a = (10,2.3,'Supritha','pythoN','Ugadi')
 
 a = [10,2.3,'sakshi',[10,20,30],(7,8),{1,2,3,4}]
 
-# print(list(filter(lambda n : type(n) in [str,list,tuple,dict,set ] and len(n) % 2 == 0, a)))
+print(list(filter(lambda n : type(n) in [str,list,tuple,dict,set ] and len(n) % 2 == 0, a)))
 
 # ! wap to find the square of number from 1 to 20 
 

@@ -21,9 +21,11 @@
 
 
 #* using list comprehension
+#! 1 var = [val for var in collection]
 
-# square = [i ** 2 for i in range(1,21)]
-# print(square)
+
+square = [i ** 2 for i in range(1,21)]
+print(square)
 
 
 #& type 2 
@@ -33,7 +35,7 @@
 #! 2 var = [val for var in collection if condition]
 
 var = [i ** 2 for i  in range(1,21) if i % 3 == 0]
-# print(var)
+print(var)
 
 
 # type 3
@@ -45,20 +47,4 @@ var = [i ** 2 for i  in range(1,21) if i % 3 == 0]
 
 
 var = [i**2 if i % 2 == 0 else i ** 3  for i in range(1,21) ]
-# print(var)
-
-
-
-a = ['python.py','file1.html','basic.py','amazon.com','inter.html']
-
-
-dic = {}
-
-for i in a:
-    spt = i.split('.')
-    if spt[-1] not in dic:
-        dic[spt[-1]] = [spt[0]]
-    else:
-        dic[spt[-1]] += [spt[0]]
-
-print(dic)
+print(var)
