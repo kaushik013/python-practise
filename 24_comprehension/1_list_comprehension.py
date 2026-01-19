@@ -47,4 +47,14 @@ print(var)
 
 
 var = [i**2 if i % 2 == 0 else i ** 3  for i in range(1,21) ]
-print(var)
+# print(var)
+
+
+#! 4 = var = [val1,val2 for var1 in collection 1 for var2 in collection 2]
+
+a = ['A','B']
+b = [1,2]
+
+result = [(i,j) for i in a for j in b]
+print(result)
+# [('A', 1), ('A', 2), ('B', 1), ('B', 2)]
