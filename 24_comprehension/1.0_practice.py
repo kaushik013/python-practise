@@ -225,11 +225,11 @@ for i in marks:
         lis.append('B')
     else:
         lis.append('C')
-# print(lis)
+print(lis)
 
 
 result  = ['A' if i  >= 85 else 'B' if i >= 70 else 'C' for i in marks]
-# print(result)
+print(result)
 
 
 

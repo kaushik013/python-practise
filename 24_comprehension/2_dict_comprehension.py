@@ -16,10 +16,10 @@
 
 ## var={key: value for var1,var2 in zip(collection1,collection2) if condition }
 
+#! var= { key: value for var in collection }
 
 result = {i : i ** 2 for i in range(1,6)}
 # print(result)
-
 
 
 #! From string "Python", create a dictionary where key = character, value = ASCII value
@@ -42,6 +42,8 @@ result = {i : len(i) for i in a.split() if len(i) % 2 != 0}
 
 
 # ! get following op 
+# {'nayan': 5, 'abcd': 'dcba', 'data': 'atad', 'appa': 4}
+
 ##! var={key: value1  if condition  else value 2 for var in collection}
 
 
