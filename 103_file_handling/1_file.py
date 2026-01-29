@@ -29,3 +29,18 @@
 #     print(result)
 
 
+# readwrite -- > (r+)
+
+# with open('file1','r+') as wrt:
+#     result = wrt.read()
+#     print(result)
+#     wrt.write('\ni am from r+ mode')
+
+# ! append(a)
+
+# with open('file1','a') as wrt:
+#     wrt.write('\ni am from a mode ')
+
+
+#! wrtite a program to count number of words prasent in a given text file 
+
