@@ -14,4 +14,4 @@ handle.execute("INSERT INTO Student VALUES (12, 'Kaushik', '8/4/2003',12)")
 
 
 var.commit()
-var.close()
+var.close() 
