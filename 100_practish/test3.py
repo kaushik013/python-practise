@@ -145,3 +145,135 @@
 # 4 5 6 7 
 # 7 8 9 10 11 
 
+
+
+# a = 'hello kaushik (i am developer) in google'
+# s = ""
+# # output = 'i am developer'
+# b = False
+# for i in a:
+#     if i == ")":
+#         b = False
+#     if b == True:
+#         s+=i
+#     if i == "(":
+#         b = True
+# print(s)
+
+
+#! wap to check if a given number is strongnum or not 
+
+# a = int(input('enter the number : '))
+
+# sum = 0
+# for i in str(a):
+#     fact = 1
+#     num = int(i)
+#     for j in range(1,num+1):
+#         fact *= j
+#     sum += fact
+# if(sum == a):
+#     print('strong num')
+# else:
+#     print('not strong num')    
+
+
+
+
+
+#! wap to check if a given number is arm strong or not 
+
+# a = int(input('enter the num : '))
+
+# pwr = len(str(a))
+
+
+# sum = 0
+# for i in str(a):
+#     sum += int(i) ** pwr
+# if(sum == a):
+#     print('armstrong')
+# else:
+#     print('not')
+
+
+
+#! wap to print number upto n 
+# a = int(input('enter the num : '))
+
+# new = []
+
+# for i in range(2,a+1):
+#     for j in range(2,i):
+#         if(i % j == 0):
+#             break
+#     else:
+#         new.append(i)
+# print(new)
+
+
+
+#! wap o perfec number upto n
+# a = int(input('enter the num : '))
+
+# new = []
+
+# for i in range(1,a+1):
+#     sum = 0
+#     for j in range(1,i):
+#         if(i % j == 0):
+#             sum += j
+#     if(sum == i):
+#         new.append(i)
+
+# print(new)
+
+
+    
+
+#! what is a use of __init__ methos
+
+# __init__ method is a constructor method
+# it run automatically when we create object
+# it used to initialize to object member 
+
+
+# example  
+# class Car:
+
+#     def __init__(self, name, color):
+#         self.name = name
+#         self.color = color
+
+#     def show(self):
+#         print(self.name)
+#         print(self.color)
+
+# obj = Car('Fortuner','White')
+# obj.show()
+
+
+
+#! explain how we can achieve overloading 
+
+# allowing an method to perform more than one type of functionality it called as method overloading 
+
+
+# Example
+
+
+class Demo:
+    @staticmethod
+    def demo():
+        print("Hii")
+    a = demo
+
+    @staticmethod
+    def demo(a):
+        print(a)
+        print("Byee")
+    b = demo
+
+obj = Demo()
+obj.a()
+obj.b(12)
